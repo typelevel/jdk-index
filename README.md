@@ -31,7 +31,7 @@ env:
 2. Regenerate your YAML:
 
    ```sh
-   githubWorkflowGenerate
+   sbt githubWorkflowGenerate
    ```
    
 3. Commit the results
