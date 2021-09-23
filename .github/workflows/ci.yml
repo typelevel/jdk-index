@@ -23,7 +23,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        scala: [2.13.6]
+        scala: [3.0.2]
         java:
           - adoptium@8
           - adoptium@11
@@ -64,3 +64,7 @@ jobs:
       - name: Check that workflows are up to date
         shell: bash
         run: sbt ++${{ matrix.scala }} githubWorkflowCheck
+
+      - name: Check if JDK index is up to date
+        shell: bash
+        run: sbt ++${{ matrix.scala }} 'runMain org.typelevel.jdk.index.check'
