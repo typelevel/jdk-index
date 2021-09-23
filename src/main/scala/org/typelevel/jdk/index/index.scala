@@ -20,24 +20,26 @@ import model.*
 import OS.*, Arch.*, Vendor.*, PackageType.*
 
 // format: off
-val Index: List[Release] = List(
-  Release(Linux, Amd64, Adoptium, Version(17, 0, 0), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz")),
-  Release(Linux, Amd64, Adoptium, Version(16, 0, 2), TarGZ, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_linux_hotspot_16.0.2_7.tar.gz")),
-  Release(Linux, Amd64, Adoptium, Version(11, 0, 12), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz")),
-  Release(Linux, Amd64, Adoptium, Version(8, 0, 302), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz")),
-  Release(Linux, Amd64, GraalVMJDK8, Version(21, 2, 0), TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java8-linux-amd64-21.2.0.tar.gz")),
-  Release(Linux, Aarch64, Adoptium, Version(17, 0, 0), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz")),
-  Release(Linux, Aarch64, Adoptium, Version(16, 0, 2), TarGZ, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_aarch64_linux_hotspot_16.0.2_7.tar.gz")),
-  Release(Linux, Aarch64, Adoptium, Version(11, 0, 12), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.12_7.tar.gz")),
-  Release(Linux, Aarch64, Adoptium, Version(8, 0, 302), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz")),
-  Release(MacOS, Amd64, Adoptium, Version(17, 0, 0), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz")),
-  Release(MacOS, Amd64, Adoptium, Version(16, 0, 2), TarGZ, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_mac_hotspot_16.0.2_7.tar.gz")),
-  Release(MacOS, Amd64, Adoptium, Version(11, 0, 12), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_mac_hotspot_11.0.12_7.tar.gz")),
-  Release(MacOS, Amd64, Adoptium, Version(8, 0, 302), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_mac_hotspot_8u302b08.tar.gz")),
-  Release(Windows, Amd64, Adoptium, Version(17, 0, 0), Zip, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.zip")),
-  Release(Windows, Amd64, Adoptium, Version(16, 0, 2), Zip, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_windows_hotspot_16.0.2_7.zip")),
-  Release(Windows, Amd64, Adoptium, Version(11, 0, 12), Zip, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.12_7.zip")),
-  Release(Windows, Amd64, Adoptium, Version(8, 0, 302), Zip, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08.1/OpenJDK8U-jdk_x64_windows_hotspot_8u302b08.zip")),
-  Release(Windows, Amd64, GraalVMJDK8, Version(21, 2, 0), Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java8-windows-amd64-21.2.0.zip"))
+val MainIndex: Index = Index(
+  List(
+    Release(Linux, Amd64, Adoptium, Version(17, 0, 0), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz")),
+    Release(Linux, Amd64, Adoptium, Version(16, 0, 2), TarGZ, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_linux_hotspot_16.0.2_7.tar.gz")),
+    Release(Linux, Amd64, Adoptium, Version(11, 0, 12), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz")),
+    Release(Linux, Amd64, Adoptium, Version(8, 0, 302), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz")),
+    Release(Linux, Amd64, GraalVMJDK8, Version(21, 2, 0), TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java8-linux-amd64-21.2.0.tar.gz")),
+    Release(Linux, Aarch64, Adoptium, Version(17, 0, 0), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz")),
+    Release(Linux, Aarch64, Adoptium, Version(16, 0, 2), TarGZ, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_aarch64_linux_hotspot_16.0.2_7.tar.gz")),
+    Release(Linux, Aarch64, Adoptium, Version(11, 0, 12), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.12_7.tar.gz")),
+    Release(Linux, Aarch64, Adoptium, Version(8, 0, 302), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz")),
+    Release(MacOS, Amd64, Adoptium, Version(17, 0, 0), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz")),
+    Release(MacOS, Amd64, Adoptium, Version(16, 0, 2), TarGZ, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_mac_hotspot_16.0.2_7.tar.gz")),
+    Release(MacOS, Amd64, Adoptium, Version(11, 0, 12), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_mac_hotspot_11.0.12_7.tar.gz")),
+    Release(MacOS, Amd64, Adoptium, Version(8, 0, 302), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_mac_hotspot_8u302b08.tar.gz")),
+    Release(Windows, Amd64, Adoptium, Version(17, 0, 0), Zip, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.zip")),
+    Release(Windows, Amd64, Adoptium, Version(16, 0, 2), Zip, url("https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_windows_hotspot_16.0.2_7.zip")),
+    Release(Windows, Amd64, Adoptium, Version(11, 0, 12), Zip, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.12_7.zip")),
+    Release(Windows, Amd64, Adoptium, Version(8, 0, 302), Zip, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08.1/OpenJDK8U-jdk_x64_windows_hotspot_8u302b08.zip")),
+    Release(Windows, Amd64, GraalVMJDK8, Version(21, 2, 0), Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java8-windows-amd64-21.2.0.zip"))
+  )
 )
 // format: on
