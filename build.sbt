@@ -36,7 +36,10 @@ val GraalVMJDK8 = "graalvm-ce-java8@21.2"
 
 ThisBuild / crossScalaVersions := Seq("2.13.6")
 ThisBuild / githubWorkflowJavaVersions := Seq("adoptium@8", "adoptium@11", "adoptium@17", GraalVMJDK8)
+
+// Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
 ThisBuild / githubWorkflowEnv += ("JABBA_INDEX" -> "${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index.json")
+
 ThisBuild / githubWorkflowOSes := Seq("ubuntu-latest", MacOS, "windows-latest")
 
 // Graal VM 8 is not available for MacOS
