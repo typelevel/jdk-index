@@ -65,6 +65,6 @@ jobs:
         shell: bash
         run: sbt ++${{ matrix.scala }} githubWorkflowCheck
 
-      - name: Check if JDK index is up to date
+      - name: Check if the JDK index is up to date
         shell: bash
         run: sbt ++${{ matrix.scala }} 'runMain org.typelevel.jdk.index.Check'

@@ -67,7 +67,7 @@ ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 
 ThisBuild / githubWorkflowBuild := Seq(
   WorkflowStep.Sbt(
-    name = Some("Check if JDK index is up to date"),
+    name = Some("Check if the JDK index is up to date"),
     commands = List("runMain org.typelevel.jdk.index.Check")
   )
 )
