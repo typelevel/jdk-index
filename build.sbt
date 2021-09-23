@@ -72,4 +72,10 @@ ThisBuild / githubWorkflowBuild := Seq(
   )
 )
 
-ThisBuild / libraryDependencies += "io.circe" %% "circe-core" % "0.14.1"
+val `jdk-index` = project
+  .in(file("."))
+  .settings(
+    libraryDependencies ++= Seq(
+      "io.circe" %% "circe-core" % "0.14.1"
+    )
+  )
