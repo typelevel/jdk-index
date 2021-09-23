@@ -16,6 +16,6 @@
 
 package org.typelevel.jdk.index.model
 
-enum Arch(jabbaName: String):
+enum Arch(val jabbaName: String):
   case Amd64 extends Arch("amd64")
   case Aarch64 extends Arch("aarch64")

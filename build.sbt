@@ -66,3 +66,5 @@ ThisBuild / githubWorkflowBuildMatrixExclusions := Seq(
 ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 
 ThisBuild / githubWorkflowBuild := Seq()
+
+ThisBuild / libraryDependencies += "io.circe" %% "circe-core" % "0.14.1"

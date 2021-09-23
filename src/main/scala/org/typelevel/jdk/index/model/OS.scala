@@ -16,7 +16,7 @@
 
 package org.typelevel.jdk.index.model
 
-enum OS(jabbaName: String):
+enum OS(val jabbaName: String):
   case Linux extends OS("linux")
   case MacOS extends OS("darwin")
   case Windows extends OS("windows")

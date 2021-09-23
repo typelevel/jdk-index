@@ -16,6 +16,6 @@
 
 package org.typelevel.jdk.index.model
 
-enum Vendor(jabbaName: String):
+enum Vendor(val jabbaName: String):
   case Adoptium extends Vendor("adoptium")
   case GraalVMJDK8 extends Vendor("graalvm-ce-java8")

@@ -16,6 +16,6 @@
 
 package org.typelevel.jdk.index.model
 
-enum PackageType(jabbaName: String):
+enum PackageType(val jabbaName: String):
   case TarGZ extends PackageType("tgz")
   case Zip extends PackageType("zip")
