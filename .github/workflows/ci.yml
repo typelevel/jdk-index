@@ -67,4 +67,4 @@ jobs:
 
       - name: Check if JDK index is up to date
         shell: bash
-        run: sbt ++${{ matrix.scala }} 'runMain org.typelevel.jdk.index.check'
+        run: sbt ++${{ matrix.scala }} 'runMain org.typelevel.jdk.index.Check'
