@@ -65,6 +65,11 @@ ThisBuild / githubWorkflowBuildMatrixExclusions := Seq(
 
 ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 
-ThisBuild / githubWorkflowBuild := Seq()
+ThisBuild / githubWorkflowBuild := Seq(
+  WorkflowStep.Sbt(
+    name = Some("Check if JDK index is up to date"),
+    commands = List("runMain org.typelevel.jdk.index.check")
+  )
+)
 
 ThisBuild / libraryDependencies += "io.circe" %% "circe-core" % "0.14.1"
