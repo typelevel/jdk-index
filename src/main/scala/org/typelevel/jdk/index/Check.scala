@@ -33,7 +33,7 @@ object Check extends IOApp:
       .lastOrError
       .flatMap { actual =>
         IO {
-          val expected = MainIndex.asJson.toString.concat(System.lineSeparator)
+          val expected = MainIndex.asJson.spaces4.concat(System.lineSeparator)
           actual === expected
         }
       }

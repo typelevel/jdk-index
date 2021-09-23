@@ -25,7 +25,7 @@ import model.json.given
 object Generate extends IOApp.Simple:
   def run: IO[Unit] =
     Stream
-      .eval(IO(MainIndex.asJson.toString.concat(System.lineSeparator)))
+      .eval(IO(MainIndex.asJson.spaces4.concat(System.lineSeparator)))
       .through(text.utf8.encode)
       .through(Files[IO].writeAll(Path("index.json")))
       .compile
