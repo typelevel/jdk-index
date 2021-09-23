@@ -16,27 +16,31 @@
 
 package org.typelevel.jdk.index
 
+import cats.effect.{ExitCode, IO, IOApp}
+import cats.effect.std.Console
+import cats.syntax.eq._
+import fs2.io.file.{Files, Path}
+import fs2.text
 import io.circe.syntax._
 import model.json.given
 
-import scala.jdk.CollectionConverters._
-
-import java.nio.file.{Files, Path}
-
-@main
-def check(): Unit =
-  val path = Path.of("index.json")
-  val actual = Files.readAllLines(path).asScala.mkString(System.lineSeparator)
-  val expected = MainIndex.asJson.toString.concat(System.lineSeparator)
-
-  val exitCode =
-    if actual == expected then 0
-    else {
-      System
-        .err
-        .println(
-          "Current index does not match the main index defined in the code. Please regenerate the index.")
-      1
-    }
-
-  System.exit(exitCode)
+object Check extends IOApp:
+  def run(args: List[String]): IO[ExitCode] =
+    Files[IO]
+      .readAll(Path("index.json"))
+      .through(text.utf8.decode)
+      .compile
+      .lastOrError
+      .flatMap { actual =>
+        IO {
+          val expected = MainIndex.asJson.toString.concat(System.lineSeparator)
+          actual === expected
+        }
+      }
+      .ifM(
+        IO.pure(ExitCode.Success),
+        Console[IO]
+          .errorln(
+            "Current index does not match the main index defined in the code. Please regenerate the index.")
+          .as(ExitCode.Error)
+      )

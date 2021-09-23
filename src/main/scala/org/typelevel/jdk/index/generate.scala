@@ -16,13 +16,17 @@
 
 package org.typelevel.jdk.index
 
+import cats.effect.{IO, IOApp}
+import fs2.{text, Stream}
+import fs2.io.file.{Files, Path}
 import io.circe.syntax._
 import model.json.given
 
-import java.nio.file.{Files, Path}
-
-@main
-def generate(): Unit =
-  val path = Path.of("index.json")
-  val json = MainIndex.asJson
-  Files.writeString(path, json.toString.concat(System.lineSeparator))
+object Generate extends IOApp.Simple:
+  def run: IO[Unit] =
+    Stream
+      .eval(IO(MainIndex.asJson.toString.concat(System.lineSeparator)))
+      .through(text.utf8.encode)
+      .through(Files[IO].writeAll(Path("index.json")))
+      .compile
+      .drain
