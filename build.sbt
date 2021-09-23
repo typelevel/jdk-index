@@ -31,10 +31,14 @@ ThisBuild / developers := List(
   Developer("rossabaker", "Ross A. Baker", "ross@rossabaker.com", url("https://github.com/rossabaker"))
 )
 
+ThisBuild / startYear := Some(2021)
+
 val MacOS = "macos-latest"
 val GraalVMJDK8 = "graalvm-ce-java8@21.2"
 
-ThisBuild / crossScalaVersions := Seq("2.13.6")
+ThisBuild / baseVersion := "0.1"
+
+ThisBuild / crossScalaVersions := Seq("3.0.2")
 ThisBuild / githubWorkflowJavaVersions := Seq("adoptium@8", "adoptium@11", "adoptium@17", GraalVMJDK8)
 
 // Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
