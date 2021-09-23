@@ -27,8 +27,16 @@ ThisBuild / scmInfo := Some(
 )
 
 ThisBuild / developers := List(
-  Developer("vasilmkd", "Vasil Vasilev", "vasil@vasilev.io", url("https://github.com/vasilmkd")),
-  Developer("rossabaker", "Ross A. Baker", "ross@rossabaker.com", url("https://github.com/rossabaker"))
+  Developer(
+    "vasilmkd",
+    "Vasil Vasilev",
+    "vasil@vasilev.io",
+    url("https://github.com/vasilmkd")),
+  Developer(
+    "rossabaker",
+    "Ross A. Baker",
+    "ross@rossabaker.com",
+    url("https://github.com/rossabaker"))
 )
 
 ThisBuild / startYear := Some(2021)
@@ -39,7 +47,11 @@ val GraalVMJDK8 = "graalvm-ce-java8@21.2"
 ThisBuild / baseVersion := "0.1"
 
 ThisBuild / crossScalaVersions := Seq("3.0.2")
-ThisBuild / githubWorkflowJavaVersions := Seq("adoptium@8", "adoptium@11", "adoptium@17", GraalVMJDK8)
+ThisBuild / githubWorkflowJavaVersions := Seq(
+  "adoptium@8",
+  "adoptium@11",
+  "adoptium@17",
+  GraalVMJDK8)
 
 // Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
 ThisBuild / githubWorkflowEnv += ("JABBA_INDEX" -> "${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index.json")
