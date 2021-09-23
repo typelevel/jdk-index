@@ -17,7 +17,3 @@
 package org.typelevel.jdk.index.model
 
 final case class Version(string: String)
-
-object Version:
-  def apply(feature: Int, interim: Int, update: Int): Version =
-    Version(s"$feature.$interim.$update")
