@@ -27,15 +27,31 @@ ThisBuild / scmInfo := Some(
 )
 
 ThisBuild / developers := List(
-  Developer("vasilmkd", "Vasil Vasilev", "vasil@vasilev.io", url("https://github.com/vasilmkd")),
-  Developer("rossabaker", "Ross A. Baker", "ross@rossabaker.com", url("https://github.com/rossabaker"))
+  Developer(
+    "vasilmkd",
+    "Vasil Vasilev",
+    "vasil@vasilev.io",
+    url("https://github.com/vasilmkd")),
+  Developer(
+    "rossabaker",
+    "Ross A. Baker",
+    "ross@rossabaker.com",
+    url("https://github.com/rossabaker"))
 )
+
+ThisBuild / startYear := Some(2021)
 
 val MacOS = "macos-latest"
 val GraalVMJDK8 = "graalvm-ce-java8@21.2"
 
-ThisBuild / crossScalaVersions := Seq("2.13.6")
-ThisBuild / githubWorkflowJavaVersions := Seq("adoptium@8", "adoptium@11", "adoptium@17", GraalVMJDK8)
+ThisBuild / baseVersion := "0.1"
+
+ThisBuild / crossScalaVersions := Seq("3.0.2")
+ThisBuild / githubWorkflowJavaVersions := Seq(
+  "adoptium@8",
+  "adoptium@11",
+  "adoptium@17",
+  GraalVMJDK8)
 
 // Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
 ThisBuild / githubWorkflowEnv += ("JABBA_INDEX" -> "${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index.json")
@@ -49,4 +65,18 @@ ThisBuild / githubWorkflowBuildMatrixExclusions := Seq(
 
 ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 
-ThisBuild / githubWorkflowBuild := Seq()
+ThisBuild / githubWorkflowBuild := Seq(
+  WorkflowStep.Sbt(
+    name = Some("Check if the JDK index is up to date"),
+    commands = List("runMain org.typelevel.jdk.index.Check")
+  )
+)
+
+val `jdk-index` = project
+  .in(file("."))
+  .settings(
+    libraryDependencies ++= Seq(
+      "co.fs2" %% "fs2-io" % "3.1.2",
+      "io.circe" %% "circe-core" % "0.14.1"
+    )
+  )
