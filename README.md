@@ -56,6 +56,6 @@ env:
 adding, removing or editing the available releases (for adding new vendors and CPU architectures, edits to the enums in
 the `model` package might need to be done). Afterwards, run
 ```sh
-sbt "runMain org.typelevel.jdk.index.Generate"
+sbt generateIndex
 ```
 to regenerate the `index.json` file.

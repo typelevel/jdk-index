@@ -68,7 +68,7 @@ ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 ThisBuild / githubWorkflowBuild := Seq(
   WorkflowStep.Sbt(
     name = Some("Check if the JDK index is up to date"),
-    commands = List("runMain org.typelevel.jdk.index.Check")
+    commands = List("checkIndex")
   )
 )
 
@@ -80,3 +80,6 @@ val `jdk-index` = project
       "io.circe" %% "circe-core" % "0.14.1"
     )
   )
+
+addCommandAlias("generateIndex", "runMain org.typelevel.jdk.index.Generate")
+addCommandAlias("checkIndex", "runMain org.typelevel.jdk.index.Check")
