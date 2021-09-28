@@ -33,6 +33,7 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, Adoptium, Version("11"), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_mac_hotspot_11.0.12_7.tar.gz")),
     Release(MacOS, Amd64, Adoptium, Version("8"), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_mac_hotspot_8u302b08.tar.gz")),
     Release(MacOS, Aarch64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_mac_hotspot_17_35.tar.gz")),
+    Release(MacOS, Arm64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_mac_hotspot_17_35.tar.gz")),
     Release(Windows, Amd64, Adoptium, Version("17"), Zip, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.zip")),
     Release(Windows, Amd64, Adoptium, Version("11"), Zip, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.12_7.zip")),
     Release(Windows, Amd64, Adoptium, Version("8"), Zip, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08.1/OpenJDK8U-jdk_x64_windows_hotspot_8u302b08.zip")),

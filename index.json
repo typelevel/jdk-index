@@ -11,6 +11,11 @@
             "jdk@adoptium" : {
                 "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_mac_hotspot_17_35.tar.gz"
             }
+        },
+        "arm64" : {
+            "jdk@adoptium" : {
+                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_mac_hotspot_17_35.tar.gz"
+            }
         }
     },
     "linux" : {
