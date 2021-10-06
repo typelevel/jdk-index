@@ -76,7 +76,7 @@ val `jdk-index` = project
   .in(file("."))
   .settings(
     libraryDependencies ++= Seq(
-      "co.fs2" %% "fs2-io" % "3.1.3",
+      "co.fs2" %% "fs2-io" % "3.1.4",
       "io.circe" %% "circe-core" % "0.14.1"
     )
   )
