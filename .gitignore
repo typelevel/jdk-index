@@ -3,3 +3,4 @@ target/
 .bloop/
 .bsp/
 .metals/
+metals.sbt

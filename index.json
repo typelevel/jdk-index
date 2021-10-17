@@ -5,6 +5,9 @@
                 "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_mac_hotspot_8u302b08.tar.gz",
                 "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_mac_hotspot_11.0.12_7.tar.gz",
                 "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz"
+            },
+            "jdk@graalvm-ce-java11" : {
+                "21.2" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java11-darwin-amd64-21.2.0.tar.gz"
             }
         },
         "aarch64" : {
@@ -27,6 +30,9 @@
             },
             "jdk@graalvm-ce-java8" : {
                 "21.2" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java8-linux-amd64-21.2.0.tar.gz"
+            },
+            "jdk@graalvm-ce-java11" : {
+                "21.2" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java11-linux-amd64-21.2.0.tar.gz"
             }
         },
         "aarch64" : {
@@ -46,6 +52,9 @@
             },
             "jdk@graalvm-ce-java8" : {
                 "21.2" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java8-windows-amd64-21.2.0.zip"
+            },
+            "jdk@graalvm-ce-java11" : {
+                "21.2" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java11-windows-amd64-21.2.0.zip"
             }
         }
     }
