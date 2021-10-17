@@ -18,6 +18,7 @@ and users should be aware by now.
   - JDK 17 &ndash; `adoptium@17`
 - [GraalVM Community Edition](https://graalvm.org)
   - 21.2 (JDK 8) &ndash; `graalvm-ce-java8@21.2`
+  - 21.2 (JDK 11) &ndash; `graalvm-ce-java11@21.2`
 
 Users are encouraged to open an issue or PR for adding a new vendor.
 
@@ -42,13 +43,13 @@ env:
      githubWorkflowEnv += ("JABBA_INDEX" -> "https://github.com/typelevel/jdk-index/raw/main/index.json")
    )
    ```
-   
+
 2. Regenerate your YAML:
 
    ```sh
    sbt githubWorkflowGenerate
    ```
-   
+
 3. Commit the results
 
 ## Contributing to this project
