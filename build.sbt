@@ -44,6 +44,8 @@ ThisBuild / startYear := Some(2021)
 val MacOS = "macos-latest"
 val GraalVMJDK8 = "graalvm-ce-java8@21.2"
 val GraalVMJDK11 = "graalvm-ce-java11@21.2"
+val OpenJ9JDK8 = "openj9-java8@0.27"
+val OpenJ9JDK11 = "openj9-java11@0.27"
 
 ThisBuild / baseVersion := "0.1"
 
@@ -54,6 +56,8 @@ ThisBuild / githubWorkflowJavaVersions := Seq(
   "adoptium@17",
   GraalVMJDK8,
   GraalVMJDK11,
+  OpenJ9JDK8,
+  OpenJ9JDK11,
 )
 
 // Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
