@@ -49,7 +49,7 @@ val OpenJ9JDK11 = "openj9-java11@0.27"
 
 ThisBuild / baseVersion := "0.1"
 
-ThisBuild / crossScalaVersions := Seq("3.0.2")
+ThisBuild / crossScalaVersions := Seq("3.1.0")
 ThisBuild / githubWorkflowJavaVersions := Seq(
   "adoptium@8",
   "adoptium@11",
