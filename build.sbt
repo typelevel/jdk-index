@@ -57,7 +57,7 @@ ThisBuild / githubWorkflowJavaVersions := Seq(
   GraalVMJDK8,
   GraalVMJDK11,
   OpenJ9JDK8,
-  OpenJ9JDK11,
+  OpenJ9JDK11
 )
 
 // Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
