@@ -48,7 +48,6 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, OpenJ9JDK11, Version("0.27"), TarGZ, url("https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_mac_11.0.12_7_openj9-0.27.0.tar.gz")),
     Release(MacOS, Amd64, OpenJ9JDK8, Version("0.29"), TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u312-b07_openj9-0.29.0/ibm-semeru-open-jdk_x64_mac_8u312b07_openj9-0.29.0.tar.gz")),
     Release(MacOS, Amd64, OpenJ9JDK8, Version("0.27"), TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u302-b08_openj9-0.27.0/ibm-semeru-open-jdk_x64_mac_8u302b08_openj9-0.27.0.tar.gz")),
-    Release(MacOS, Aarch64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_mac_hotspot_17_35.tar.gz")),
     Release(MacOS, Arm64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_mac_hotspot_17_35.tar.gz")),
     Release(Windows, Amd64, Adoptium, Version("17"), Zip, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.zip")),
     Release(Windows, Amd64, Adoptium, Version("11"), Zip, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_windows_hotspot_11.0.13_8.zip")),
