@@ -36,7 +36,13 @@ ThisBuild / developers := List(
     "rossabaker",
     "Ross A. Baker",
     "ross@rossabaker.com",
-    url("https://github.com/rossabaker"))
+    url("https://github.com/rossabaker")),
+  Developer(
+    "durban",
+    "Daniel Urban",
+    "urban.dani@gmail.com",
+    url("https://github.com/durban")
+  )
 )
 
 ThisBuild / startYear := Some(2021)
