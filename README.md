@@ -20,8 +20,8 @@ and users should be aware by now.
   - 21.2 (JDK 8) &ndash; `graalvm-ce-java8@21.2`
   - 21.2 (JDK 11) &ndash; `graalvm-ce-java11@21.2`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
-  - 0.27 (JDK 8) &ndash; `openj9-java8@0.27`
-  - 0.27 (JDK 11) &ndash; `openj9-java11@0.27`
+  - 0.29 (JDK 8) &ndash; `openj9-java8@0.29`
+  - 0.29 (JDK 11) &ndash; `openj9-java11@0.29`
 
 Users are encouraged to open an issue or PR for adding a new vendor.
 
