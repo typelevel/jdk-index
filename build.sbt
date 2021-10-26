@@ -45,7 +45,7 @@ val MacOS = "macos-latest"
 val GraalVMJDK8 = "graalvm-ce-java8@21.2"
 val GraalVMJDK11 = "graalvm-ce-java11@21.2"
 val OpenJ9JDK8 = "openj9-java8@0.29"
-val OpenJ9JDK11 = "openj9-java11@0.27"
+val OpenJ9JDK11 = "openj9-java11@0.29"
 
 ThisBuild / baseVersion := "0.1"
 
