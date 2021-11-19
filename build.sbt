@@ -53,6 +53,9 @@ val GraalVMJDK11 = "graalvm-ce-java11@21.3"
 val GraalVMJDK17 = "graalvm-ce-java17@21.3"
 val OpenJ9JDK8 = "openj9-java8@0.29"
 val OpenJ9JDK11 = "openj9-java11@0.29"
+val CorrettoJDK8 = "corretto@8"
+val CorrettoJDK11 = "corretto@11"
+val CorrettoJDK17 = "corretto@17"
 
 ThisBuild / baseVersion := "0.1"
 
@@ -65,7 +68,10 @@ ThisBuild / githubWorkflowJavaVersions := Seq(
   GraalVMJDK11,
   GraalVMJDK17,
   OpenJ9JDK8,
-  OpenJ9JDK11
+  OpenJ9JDK11,
+  CorrettoJDK8,
+  CorrettoJDK11,
+  CorrettoJDK17
 )
 
 // Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
