@@ -64,7 +64,7 @@ env:
 ## Contributing to this project
 `src/main/scala/org/typelevel/jdk/index/index.scala` is the main source of truth for the JDK index. Edit that file by
 adding, removing or editing the available releases (for adding new vendors and CPU architectures, edits to the enums in
-the `model` package might need to be done). Afterwards, run
+the `model` package might be needed). Afterwards, run
 ```sh
 sbt generateIndex
 ```

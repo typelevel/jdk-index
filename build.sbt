@@ -46,58 +46,14 @@ ThisBuild / developers := List(
 )
 
 ThisBuild / startYear := Some(2021)
+ThisBuild / licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 
-val MacOS = "macos-latest"
-val GraalVMJDK8 = "graalvm-ce-java8@21.2"
-val GraalVMJDK11 = "graalvm-ce-java11@21.3"
-val GraalVMJDK17 = "graalvm-ce-java17@21.3"
-val OpenJ9JDK8 = "openj9-java8@0.29"
-val OpenJ9JDK11 = "openj9-java11@0.29"
-val OpenJ9JDK17 = "openj9-java17@0.29"
-val CorrettoJDK8 = "corretto@8"
-val CorrettoJDK11 = "corretto@11"
-val CorrettoJDK17 = "corretto@17"
-
-ThisBuild / baseVersion := "0.1"
-
-ThisBuild / crossScalaVersions := Seq("3.1.0")
-ThisBuild / githubWorkflowJavaVersions := Seq(
-  "adoptium@8",
-  "adoptium@11",
-  "adoptium@17",
-  GraalVMJDK8,
-  GraalVMJDK11,
-  GraalVMJDK17,
-  OpenJ9JDK8,
-  OpenJ9JDK11,
-  OpenJ9JDK17,
-  CorrettoJDK8,
-  CorrettoJDK11,
-  CorrettoJDK17
-)
-
-// Use the index from the current commit. This essentially tests that JDKs can be installed from the current changes to the index.
-ThisBuild / githubWorkflowEnv += ("JABBA_INDEX" -> "${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index.json")
-
-ThisBuild / githubWorkflowOSes := Seq("ubuntu-latest", MacOS, "windows-latest")
-
-// Graal VM 8 is not available for MacOS
-ThisBuild / githubWorkflowBuildMatrixExclusions := Seq(
-  MatrixExclude(Map("os" -> MacOS, "java" -> GraalVMJDK8))
-)
-
-ThisBuild / githubWorkflowPublishTargetBranches := Seq()
-
-ThisBuild / githubWorkflowBuild := Seq(
-  WorkflowStep.Sbt(
-    name = Some("Check if the JDK index is up to date"),
-    commands = List("checkIndex")
-  )
-)
+ThisBuild / scalaVersion := "3.1.0"
 
 val `jdk-index` = project
   .in(file("."))
   .settings(
+    headerLicense := Some(HeaderLicense.ALv2("2021", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io" % "3.2.3",
       "io.circe" %% "circe-core" % "0.14.1"
