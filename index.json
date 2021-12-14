@@ -1,6 +1,9 @@
 {
     "darwin" : {
         "amd64" : {
+            "jdk@openj9-java17" : {
+                "0.29" : "tgz+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_mac_17.0.1_12_openj9-0.29.1.tar.gz"
+            },
             "jdk@openj9-java8" : {
                 "0.29" : "tgz+https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u312-b07_openj9-0.29.0/ibm-semeru-open-jdk_x64_mac_8u312b07_openj9-0.29.0.tar.gz"
             },
@@ -35,6 +38,9 @@
     },
     "linux" : {
         "amd64" : {
+            "jdk@openj9-java17" : {
+                "0.29" : "tgz+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz"
+            },
             "jdk@graalvm-ce-java17" : {
                 "21.3" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.3.0/graalvm-ce-java17-linux-amd64-21.3.0.tar.gz"
             },
@@ -82,6 +88,9 @@
     },
     "windows" : {
         "amd64" : {
+            "jdk@openj9-java17" : {
+                "0.29" : "zip+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_windows_17.0.1_12_openj9-0.29.1.zip"
+            },
             "jdk@graalvm-ce-java17" : {
                 "21.3" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.3.0/graalvm-ce-java17-windows-amd64-21.3.0.zip"
             },

@@ -33,6 +33,7 @@ jobs:
           - graalvm-ce-java17@21.3
           - openj9-java8@0.29
           - openj9-java11@0.29
+          - openj9-java17@0.29
           - corretto@8
           - corretto@11
           - corretto@17
