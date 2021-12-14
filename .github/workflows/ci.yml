@@ -9,12 +9,11 @@ name: Continuous Integration
 
 on:
   pull_request:
-    branches: ['**']
+    branches: [main]
   push:
-    branches: ['**']
+    branches: [main]
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   JABBA_INDEX: ${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index.json
 
 jobs:
