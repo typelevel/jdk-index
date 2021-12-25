@@ -55,7 +55,7 @@ val `jdk-index` = project
   .settings(
     headerLicense := Some(HeaderLicense.ALv2("2021", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
-      "co.fs2" %% "fs2-io" % "3.2.3",
+      "co.fs2" %% "fs2-io" % "3.2.4",
       "io.circe" %% "circe-core" % "0.14.1"
     )
   )
