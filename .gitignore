@@ -2,5 +2,6 @@ target/
 
 .bloop/
 .bsp/
+.idea/
 .metals/
 metals.sbt
