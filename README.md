@@ -17,7 +17,7 @@ and users should be aware by now.
   - JDK 11 &ndash; `adoptium@11`
   - JDK 17 &ndash; `adoptium@17`
 - [GraalVM Community Edition](https://graalvm.org)
-  - 21.3 (JDK 11) &ndash; `graalvm-ce-java11@21.3`
+  - 22.0 (JDK 11) &ndash; `graalvm-ce-java11@22.0`
   - 21.3 (JDK 17) &ndash; `graalvm-ce-java17@21.3`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
   - 0.29 (JDK 8) &ndash; `openj9-java8@0.29`
