@@ -33,6 +33,7 @@ val MainIndex: Index = Index(
     Release(Linux, Amd64, Corretto, Version("17"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-17-x64-linux-jdk.tar.gz")),
     Release(Linux, Amd64, Corretto, Version("11"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.tar.gz")),
     Release(Linux, Amd64, Corretto, Version("8"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz")),
+    Release(Linux, Amd64, Oracle, Version("17"), TarGZ, url("https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz")),
     Release(Linux, Aarch64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.1_12.tar.gz")),
     Release(Linux, Aarch64, Adoptium, Version("11"), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.14_9.tar.gz")),
     Release(Linux, Aarch64, Adoptium, Version("8"), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u322b06.tar.gz")),
@@ -41,6 +42,7 @@ val MainIndex: Index = Index(
     Release(Linux, Aarch64, Corretto, Version("17"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-17-aarch64-linux-jdk.tar.gz")),
     Release(Linux, Aarch64, Corretto, Version("11"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-11-aarch64-linux-jdk.tar.gz")),
     Release(Linux, Aarch64, Corretto, Version("8"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-8-aarch64-linux-jdk.tar.gz")),
+    Release(Linux, Aarch64, Oracle, Version("17"), TarGZ, url("https://download.oracle.com/java/17/latest/jdk-17_linux-aarch64_bin.tar.gz")),
     Release(MacOS, Amd64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_mac_hotspot_17.0.1_12.tar.gz")),
     Release(MacOS, Amd64, Adoptium, Version("11"), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_mac_hotspot_11.0.14_9.tar.gz")),
     Release(MacOS, Amd64, Adoptium, Version("8"), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_mac_hotspot_8u322b06.tar.gz")),
@@ -52,8 +54,10 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, Corretto, Version("17"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-17-x64-macos-jdk.tar.gz")),
     Release(MacOS, Amd64, Corretto, Version("11"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-11-x64-macos-jdk.tar.gz")),
     Release(MacOS, Amd64, Corretto, Version("8"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-8-x64-macos-jdk.tar.gz")),
+    Release(MacOS, Amd64, Oracle, Version("17"), TarGZ, url("https://download.oracle.com/java/17/latest/jdk-17_macos-x64_bin.tar.gz")),
     Release(MacOS, Arm64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.1_12.tar.gz")),
     Release(MacOS, Arm64, Corretto, Version("17"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-17-aarch64-macos-jdk.tar.gz")),
+    Release(MacOS, Arm64, Oracle, Version("17"), TarGZ, url("https://download.oracle.com/java/17/latest/jdk-17_macos-aarch64_bin.tar.gz")),
     Release(Windows, Amd64, Adoptium, Version("17"), Zip, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_windows_hotspot_17.0.1_12.zip")),
     Release(Windows, Amd64, Adoptium, Version("11"), Zip, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_windows_hotspot_11.0.14_9.zip")),
     Release(Windows, Amd64, Adoptium, Version("8"), Zip, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_windows_hotspot_8u322b06.zip")),
@@ -64,7 +68,8 @@ val MainIndex: Index = Index(
     Release(Windows, Amd64, OpenJ9JDK8, Version("0.29"), Zip, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u312-b07_openj9-0.29.0/ibm-semeru-open-jdk_x64_windows_8u312b07_openj9-0.29.0.zip")),
     Release(Windows, Amd64, Corretto, Version("17"), Zip, url("https://corretto.aws/downloads/latest/amazon-corretto-17-x64-windows-jdk.zip")),
     Release(Windows, Amd64, Corretto, Version("11"), Zip, url("https://corretto.aws/downloads/latest/amazon-corretto-11-x64-windows-jdk.zip")),
-    Release(Windows, Amd64, Corretto, Version("8"), Zip, url("https://corretto.aws/downloads/latest/amazon-corretto-8-x64-windows-jdk.zip"))
+    Release(Windows, Amd64, Corretto, Version("8"), Zip, url("https://corretto.aws/downloads/latest/amazon-corretto-8-x64-windows-jdk.zip")),
+    Release(Windows, Amd64, Oracle, Version("17"), Zip, url("https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip"))
   )
 )
 // format: on

@@ -24,3 +24,4 @@ enum Vendor(val jabbaName: String):
   case OpenJ9JDK11 extends Vendor("openj9-java11")
   case OpenJ9JDK17 extends Vendor("openj9-java17")
   case Corretto extends Vendor("corretto")
+  case Oracle extends Vendor("oracle")

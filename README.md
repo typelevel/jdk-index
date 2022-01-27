@@ -27,6 +27,8 @@ and users should be aware by now.
   - JDK 8 &ndash; `corretto@8`
   - JDK 11 &ndash; `corretto@11`
   - JDK 17 &ndash; `corretto@17`
+- [Oracle](https://www.oracle.com/java/)
+  - JDK 17 &ndash; `oracle@17`
 
 Users are encouraged to open an issue or PR for adding a new vendor.
 
