@@ -20,7 +20,7 @@ jobs:
           - adoptium@11
           - adoptium@17
           - graalvm-ce-java11@22.0
-          - graalvm-ce-java17@21.3
+          - graalvm-ce-java17@22.0
           - openj9-java8@0.29
           - openj9-java11@0.29
           - openj9-java17@0.29
