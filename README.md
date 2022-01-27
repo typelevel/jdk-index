@@ -41,25 +41,6 @@ env:
   JABBA_INDEX: 'https://github.com/typelevel/jdk-index/raw/main/index.json'
 ```
 
-### With [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
-
-1. In build.sbt, add the environment variable and customize your JDKs:
-
-   ```scala
-   .settings(
-     githubWorkflowJavaVersions := List("adoptium@8", "adoptium@11", "adoptium@17"),
-     githubWorkflowEnv += ("JABBA_INDEX" -> "https://github.com/typelevel/jdk-index/raw/main/index.json")
-   )
-   ```
-
-2. Regenerate your YAML:
-
-   ```sh
-   sbt githubWorkflowGenerate
-   ```
-
-3. Commit the results
-
 ## Contributing to this project
 `src/main/scala/org/typelevel/jdk/index/index.scala` is the main source of truth for the JDK index. Edit that file by
 adding, removing or editing the available releases (for adding new vendors and CPU architectures, edits to the enums in
