@@ -36,7 +36,7 @@ val MainIndex: Index = Index(
     Release(Linux, Amd64, Corretto, Version("8"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz")),
     Release(Linux, Aarch64, Adoptium, Version("17"), TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.1_12.tar.gz")),
     Release(Linux, Aarch64, Adoptium, Version("11"), TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.14_9.tar.gz")),
-    Release(Linux, Aarch64, Adoptium, Version("8"), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jdk_aarch64_linux_hotspot_8u312b07.tar.gz")),
+    Release(Linux, Aarch64, Adoptium, Version("8"), TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u322b06.tar.gz")),
     Release(Linux, Aarch64, GraalVMJDK17, Version("21.3"), TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.3.0/graalvm-ce-java17-linux-aarch64-21.3.0.tar.gz")),
     Release(Linux, Aarch64, GraalVMJDK11, Version("21.3"), TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.3.0/graalvm-ce-java11-linux-aarch64-21.3.0.tar.gz")),
     Release(Linux, Aarch64, Corretto, Version("17"), TarGZ, url("https://corretto.aws/downloads/latest/amazon-corretto-17-aarch64-linux-jdk.tar.gz")),
