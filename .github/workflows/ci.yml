@@ -2,9 +2,9 @@ name: Continuous Integration
 
 on:
   pull_request:
-    branches: [main]
+    branches: [ main ]
   push:
-    branches: [main]
+    branches: [ main ]
 
 env:
   JABBA_INDEX: ${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index.json
@@ -14,12 +14,11 @@ jobs:
     name: Build and Test
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
         java:
           - adoptium@8
           - adoptium@11
           - adoptium@17
-          - graalvm-ce-java8@21.2
           - graalvm-ce-java11@21.3
           - graalvm-ce-java17@21.3
           - openj9-java8@0.29
@@ -28,9 +27,6 @@ jobs:
           - corretto@8
           - corretto@11
           - corretto@17
-        exclude:
-          - os: macos-latest
-            java: graalvm-ce-java8@21.2
     runs-on: ${{ matrix.os }}
     steps:
       - name: Ignore line ending differences in git
