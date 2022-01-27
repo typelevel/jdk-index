@@ -27,6 +27,7 @@ jobs:
           - corretto@8
           - corretto@11
           - corretto@17
+          - oracle@17
     runs-on: ${{ matrix.os }}
     steps:
       - name: Ignore line ending differences in git
