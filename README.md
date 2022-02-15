@@ -20,9 +20,9 @@ and users should be aware by now.
   - 22.0 (JDK 11) &ndash; `graalvm-ce-java11@22.0`
   - 22.0 (JDK 17) &ndash; `graalvm-ce-java17@22.0`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
-  - 0.29 (JDK 8) &ndash; `openj9-java8@0.29`
-  - 0.29 (JDK 11) &ndash; `openj9-java11@0.29`
-  - 0.29 (JDK 17) &ndash; `openj9-java17@0.29`
+  - 0.30 (JDK 8) &ndash; `openj9-java8@0.30`
+  - 0.30 (JDK 11) &ndash; `openj9-java11@0.30`
+  - 0.30 (JDK 17) &ndash; `openj9-java17@0.30`
 - [Amazon Corretto](https://docs.aws.amazon.com/corretto/index.html)
   - JDK 8 &ndash; `corretto@8`
   - JDK 11 &ndash; `corretto@11`
