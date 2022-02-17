@@ -17,11 +17,8 @@
 package org.typelevel.jdk.index.model
 
 enum Vendor(val jabbaName: String):
-  case Adoptium extends Vendor("adoptium")
-  case GraalVMJDK11 extends Vendor("graalvm-ce-java11")
-  case GraalVMJDK17 extends Vendor("graalvm-ce-java17")
-  case OpenJ9JDK8 extends Vendor("openj9-java8")
-  case OpenJ9JDK11 extends Vendor("openj9-java11")
-  case OpenJ9JDK17 extends Vendor("openj9-java17")
+  case Temurin extends Vendor("temurin")
+  case GraalVM extends Vendor("graalvm")
+  case OpenJ9 extends Vendor("openj9")
   case Corretto extends Vendor("corretto")
   case Oracle extends Vendor("oracle")

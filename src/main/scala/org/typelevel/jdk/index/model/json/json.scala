@@ -44,7 +44,7 @@ private def nestedIndexToStringifiedMap(nested: NestedIndex) =
           relByOsArch.map { (vendor, relByOsArchVendor) =>
             s"jdk@${vendor.jabbaName}" ->
               relByOsArchVendor.map { (version, release) =>
-                version.string -> s"${release.packageType.jabbaName}+${release.url.toString}"
+                version.toString -> s"${release.packageType.jabbaName}+${release.url.toString}"
               }
           }
       }

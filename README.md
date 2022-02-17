@@ -12,21 +12,21 @@ depending on a specific version in time of this index). This is a common practic
 and users should be aware by now.
 
 ## Available JDK vendors
-- [Eclipse Adoptium](https://adoptium.net)
-  - JDK 8 &ndash; `adoptium@8`
-  - JDK 11 &ndash; `adoptium@11`
-  - JDK 17 &ndash; `adoptium@17`
+- [Eclipse Temurin](https://adoptium.net)
+  - JDK 17 &ndash; `temurin@17`
+  - JDK 11 &ndash; `temurin@11`
+  - JDK  8 &ndash; `temurin@8`
 - [GraalVM Community Edition](https://graalvm.org)
-  - 22.0 (JDK 11) &ndash; `graalvm-ce-java11@22.0`
-  - 22.0 (JDK 17) &ndash; `graalvm-ce-java17@22.0`
+  - JDK 17 &ndash; `graalvm@17`
+  - JDK 11 &ndash; `graalvm@11`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
-  - 0.30 (JDK 8) &ndash; `openj9-java8@0.30`
-  - 0.30 (JDK 11) &ndash; `openj9-java11@0.30`
-  - 0.30 (JDK 17) &ndash; `openj9-java17@0.30`
+  - JDK 17 &ndash; `openj9@17`
+  - JDK 11 &ndash; `openj9@11`
+  - JDK  8 &ndash; `openj9@8`
 - [Amazon Corretto](https://docs.aws.amazon.com/corretto/index.html)
-  - JDK 8 &ndash; `corretto@8`
-  - JDK 11 &ndash; `corretto@11`
   - JDK 17 &ndash; `corretto@17`
+  - JDK 11 &ndash; `corretto@11`
+  - JDK 8 &ndash; `corretto@8`
 - [Oracle](https://www.oracle.com/java/)
   - JDK 17 &ndash; `oracle@17`
 
