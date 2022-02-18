@@ -2,7 +2,7 @@
     "darwin" : {
         "amd64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-8-x64-macos-jdk.tar.gz",
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.322.06.1/amazon-corretto-8.322.06.1-macosx-x64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-11-x64-macos-jdk.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-17-x64-macos-jdk.tar.gz"
             },
@@ -42,7 +42,7 @@
     "linux" : {
         "amd64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz",
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.322.06.2/amazon-corretto-8.322.06.2-linux-x64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-17-x64-linux-jdk.tar.gz"
             },
@@ -66,7 +66,7 @@
         },
         "aarch64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-8-aarch64-linux-jdk.tar.gz",
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.322.06.2/amazon-corretto-8.322.06.2-linux-aarch64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-11-aarch64-linux-jdk.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/latest/amazon-corretto-17-aarch64-linux-jdk.tar.gz"
             },
@@ -92,7 +92,7 @@
     "windows" : {
         "amd64" : {
             "jdk@corretto" : {
-                "8" : "zip+https://corretto.aws/downloads/latest/amazon-corretto-8-x64-windows-jdk.zip",
+                "8" : "zip+https://corretto.aws/downloads/resources/8.322.06.1/amazon-corretto-8.322.06.1-windows-x64-jdk.zip",
                 "11" : "zip+https://corretto.aws/downloads/latest/amazon-corretto-11-x64-windows-jdk.zip",
                 "17" : "zip+https://corretto.aws/downloads/latest/amazon-corretto-17-x64-windows-jdk.zip"
             },
