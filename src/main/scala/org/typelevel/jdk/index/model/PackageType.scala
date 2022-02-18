@@ -16,6 +16,8 @@
 
 package org.typelevel.jdk.index.model
 
-enum PackageType(val jabbaName: String):
+enum PackageType(string: String):
   case TarGZ extends PackageType("tgz")
   case Zip extends PackageType("zip")
+
+  override def toString: String = string

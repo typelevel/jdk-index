@@ -35,13 +35,21 @@ ThisBuild / scalaVersion := "3.1.1"
 
 val `jdk-index` = project
   .in(file("."))
+  .enablePlugins(AutomateHeaderPlugin)
   .settings(
     headerLicense := Some(
       HeaderLicense.ALv2("2021-2022", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io" % "3.2.4",
       "io.circe" %% "circe-core" % "0.14.1"
-    )
+    ),
+    scalacOptions ++= {
+      val version = System.getProperty("java.version")
+      if (version.startsWith("1.8"))
+        Seq()
+      else
+        Seq("-release", "8")
+    }
   )
 
 addCommandAlias("generateIndex", "runMain org.typelevel.jdk.index.Generate")
