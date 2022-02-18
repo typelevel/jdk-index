@@ -19,8 +19,8 @@ package model
 package files
 
 import java.net.URL
-import java.nio.file.Path
+import java.nio.file.{Path, Paths}
 
 def releaseToPath(release: Release): (Path, URL) =
   val Release(os, arch, vendor, version, _, url) = release
-  (Path.of("index", os.githubName, arch.githubName, vendor.toString, version.toString), url)
+  (Paths.get("index", os.githubName, arch.githubName, vendor.toString, version.toString), url)

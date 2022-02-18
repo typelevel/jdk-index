@@ -42,7 +42,14 @@ val `jdk-index` = project
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io" % "3.2.4",
       "io.circe" %% "circe-core" % "0.14.1"
-    )
+    ),
+    scalacOptions ++= {
+      val version = System.getProperty("java.version")
+      if (version.startsWith("1.8"))
+        Seq()
+      else
+        Seq("-release", "8")
+    }
   )
 
 addCommandAlias("generateIndex", "runMain org.typelevel.jdk.index.Generate")
