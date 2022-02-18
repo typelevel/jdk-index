@@ -35,8 +35,9 @@ Users are encouraged to open an issue or PR for adding a new vendor.
 ## GitHub Actions
 
 This index is useful to test your code on versions not yet [available on GitHub Actions](https://github.com/actions/setup-java#supported-distributions).
+The recommended way to do this is with the [typelevel/download-java](https://github.com/typelevel/download-java) action.
 
-Add a `JABBA_INDEX` environment to your `ci.yml`.  Point at a specific commit for reproducibility, or `main` to get the latest:
+Alternatively, if you are using [jabba](https://github.com/shyiko/jabba) (for example [olafurpg/setup-scala](https://github.com/olafurpg/setup-scala) uses jabba), you can add a `JABBA_INDEX` environment to your `ci.yml`.  Point at a specific commit for reproducibility, or `main` to get the latest:
 
 ```yaml
 env:
