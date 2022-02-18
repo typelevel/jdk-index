@@ -19,14 +19,32 @@ package org.typelevel.jdk.index
 import cats.effect.{IO, IOApp}
 import fs2.{text, Stream}
 import fs2.io.file.{Files, Path}
-import io.circe.syntax._
-import model.json.given
+import io.circe.syntax.*
+import org.typelevel.jdk.index.model.files.*
+import org.typelevel.jdk.index.model.json.given
 
 object Generate extends IOApp.Simple:
-  def run: IO[Unit] =
+  val writeJabbaIndex: IO[Unit] =
     Stream
       .eval(IO(MainIndex.asJson.spaces4.concat("\n")))
       .through(text.utf8.encode)
       .through(Files[IO].writeAll(Path("index.json")))
       .compile
       .drain
+
+  val writeFileIndex: IO[Unit] =
+    Stream(MainIndex.releases: _*)
+      .covary[IO]
+      .map(releaseToPath)
+      .evalMap((path, url) => IO((path, url.toString)))
+      .evalTap((path, _) => Files[IO].createDirectories(Path.fromNioPath(path)))
+      .flatMap { (path, contents) =>
+        Stream(contents)
+          .through(text.utf8.encode)
+          .through(Files[IO].writeAll(Path.fromNioPath(path.resolve("jdk"))))
+      }
+      .compile
+      .drain
+
+  def run: IO[Unit] =
+    IO.both(writeJabbaIndex, writeFileIndex).void

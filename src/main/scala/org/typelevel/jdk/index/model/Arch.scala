@@ -16,7 +16,9 @@
 
 package org.typelevel.jdk.index.model
 
-enum Arch(val jabbaName: String):
-  case Amd64 extends Arch("amd64")
-  case Aarch64 extends Arch("aarch64")
-  case Arm64 extends Arch("arm64")
+enum Arch(string: String, val githubName: String):
+  case Amd64 extends Arch("amd64", "X64")
+  case Aarch64 extends Arch("aarch64", "ARM64")
+  case Arm64 extends Arch("arm64", "ARM64")
+
+  override def toString: String = string

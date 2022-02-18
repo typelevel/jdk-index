@@ -16,7 +16,9 @@
 
 package org.typelevel.jdk.index.model
 
-enum OS(val jabbaName: String):
-  case Linux extends OS("linux")
-  case MacOS extends OS("darwin")
-  case Windows extends OS("windows")
+enum OS(string: String, val githubName: String):
+  case Linux extends OS("linux", "Linux")
+  case MacOS extends OS("darwin", "macOS")
+  case Windows extends OS("windows", "Windows")
+
+  override def toString: String = string

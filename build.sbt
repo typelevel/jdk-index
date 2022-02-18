@@ -35,6 +35,7 @@ ThisBuild / scalaVersion := "3.1.1"
 
 val `jdk-index` = project
   .in(file("."))
+  .enablePlugins(AutomateHeaderPlugin)
   .settings(
     headerLicense := Some(
       HeaderLicense.ALv2("2021-2022", (ThisBuild / organizationName).value)),

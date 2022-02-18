@@ -38,13 +38,13 @@ private def nestedIndex(index: Index): NestedIndex =
 
 private def nestedIndexToStringifiedMap(nested: NestedIndex) =
   nested.map { (os, relByOs) =>
-    os.jabbaName ->
+    os.toString ->
       relByOs.map { (arch, relByOsArch) =>
-        arch.jabbaName ->
+        arch.toString ->
           relByOsArch.map { (vendor, relByOsArchVendor) =>
-            s"jdk@${vendor.jabbaName}" ->
+            s"jdk@$vendor" ->
               relByOsArchVendor.map { (version, release) =>
-                version.toString -> s"${release.packageType.jabbaName}+${release.url.toString}"
+                version.toString -> s"${release.packageType}+${release.url}"
               }
           }
       }

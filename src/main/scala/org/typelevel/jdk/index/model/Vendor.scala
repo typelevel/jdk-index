@@ -16,9 +16,11 @@
 
 package org.typelevel.jdk.index.model
 
-enum Vendor(val jabbaName: String):
+enum Vendor(string: String):
   case Temurin extends Vendor("temurin")
   case GraalVM extends Vendor("graalvm")
   case OpenJ9 extends Vendor("openj9")
   case Corretto extends Vendor("corretto")
   case Oracle extends Vendor("oracle")
+
+  override def toString: String = string
