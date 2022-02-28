@@ -86,7 +86,7 @@ jobs:
         with:
           distribution: ${{ matrix.distribution }}
           java-version: ${{ matrix.version }}
-          index: 'https://raw.githubusercontent.com/typelevel/jdk-index/${{ github.sha }}/index'
+          index: ${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index
 
       - name: Setup Java
         uses: actions/setup-java@v2
