@@ -24,6 +24,7 @@ and users should be aware by now.
   - JDK 11 &ndash; `openj9@11`
   - JDK  8 &ndash; `openj9@8`
 - [Amazon Corretto](https://docs.aws.amazon.com/corretto/index.html)
+  - JDK 18 &ndash; `corretto@18`
   - JDK 17 &ndash; `corretto@17`
   - JDK 11 &ndash; `corretto@11`
   - JDK 8 &ndash; `corretto@8`
