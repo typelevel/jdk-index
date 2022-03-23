@@ -21,7 +21,8 @@
                 "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-jdk_x64_mac_hotspot_17.0.2_8.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_macos-x64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_macos-x64_bin.tar.gz",
+                "18" : "tgz+https://download.oracle.com/java/18/latest/jdk-18_macos-x64_bin.tar.gz"
             }
         },
         "arm64" : {
@@ -35,7 +36,8 @@
                 "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.2_8.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_macos-aarch64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_macos-aarch64_bin.tar.gz",
+                "18" : "tgz+https://download.oracle.com/java/18/latest/jdk-18_macos-aarch64_bin.tar.gz"
             }
         }
     },
@@ -61,7 +63,8 @@
                 "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_linux-x64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_linux-x64_bin.tar.gz",
+                "18" : "tgz+https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.tar.gz"
             }
         },
         "aarch64" : {
@@ -85,7 +88,8 @@
                 "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.2_8.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_linux-aarch64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.2_linux-aarch64_bin.tar.gz",
+                "18" : "tgz+https://download.oracle.com/java/18/latest/jdk-18_linux-aarch64_bin.tar.gz"
             }
         }
     },
@@ -111,7 +115,8 @@
                 "17" : "zip+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.zip"
             },
             "jdk@oracle" : {
-                "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.2_windows-x64_bin.zip"
+                "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.2_windows-x64_bin.zip",
+                "18" : "zip+https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.zip"
             }
         }
     }
