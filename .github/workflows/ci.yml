@@ -103,7 +103,7 @@ jobs:
 
       - name: Download Java
         id: download-java
-        uses: typelevel/download-java@v1
+        uses: typelevel/download-java@v2
         with:
           distribution: ${{ matrix.distribution }}
           java-version: ${{ matrix.version }}
