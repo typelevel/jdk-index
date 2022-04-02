@@ -59,9 +59,7 @@ object Check extends IOApp:
   val checkFilesIndex: IO[ExitCode] =
     Stream(MainIndex.releases: _*)
       .map(releaseToPath)
-      .evalMap { (path, url) =>
-        IO((path.resolve("jdk"), url.toString))
-      }
+      .evalMap { (path, url) => IO((path.resolve("jdk"), url.toString)) }
       .evalMap { (path, contents) =>
         Files[IO]
           .readAll(Path.fromNioPath(path))
