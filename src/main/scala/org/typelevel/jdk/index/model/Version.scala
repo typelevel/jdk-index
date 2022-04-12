@@ -21,5 +21,5 @@ enum Version(string: String):
   case JDK_17 extends Version("17")
   case JDK_11 extends Version("11")
   case JDK_8 extends Version("8")
-  
+
   override def toString: String = string
