@@ -21,6 +21,7 @@ and users should be aware by now.
   - JDK 17 &ndash; `graalvm@17`
   - JDK 11 &ndash; `graalvm@11`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
+  - JDK 18 &ndash; `openj9@18`
   - JDK 17 &ndash; `openj9@17`
   - JDK 11 &ndash; `openj9@11`
   - JDK  8 &ndash; `openj9@8`
