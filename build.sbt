@@ -40,7 +40,7 @@ val `jdk-index` = project
     headerLicense := Some(
       HeaderLicense.ALv2("2021-2022", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
-      "co.fs2" %% "fs2-io" % "3.2.10",
+      "co.fs2" %% "fs2-io" % "3.2.11",
       "io.circe" %% "circe-core" % "0.14.2"
     ),
     scalacOptions ++= {
