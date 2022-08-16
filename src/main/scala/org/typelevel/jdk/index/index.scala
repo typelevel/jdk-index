@@ -75,7 +75,7 @@ val MainIndex: Index = Index(
     Release(Linux, Aarch64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4_linux-aarch64_bin.tar.gz")),
 
     // Temurin, MacOS, x64
-    Release(MacOS, Amd64, Temurin, JDK_18, TarGZ, url("https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.1%2B10/OpenJDK18U-jdk_x64_mac_hotspot_18.0.1_10.tar.gz")),
+    Release(MacOS, Amd64, Temurin, JDK_18, TarGZ, url("https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2%2B9/OpenJDK18U-jdk_x64_mac_hotspot_18.0.2_9.tar.gz")),
     Release(MacOS, Amd64, Temurin, JDK_17, TarGZ, url("https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jdk_x64_mac_hotspot_17.0.4_8.tar.gz")),
     Release(MacOS, Amd64, Temurin, JDK_11, TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-jdk_x64_mac_hotspot_11.0.16_8.tar.gz")),
     Release(MacOS, Amd64, Temurin, JDK_8, TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jdk_x64_mac_hotspot_8u345b01.tar.gz")),
