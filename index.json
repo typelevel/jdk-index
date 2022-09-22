@@ -3,6 +3,7 @@
         "amd64" : {
             "jdk@corretto" : {
                 "8" : "tgz+https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-macosx-x64.tar.gz",
+                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-macosx-x64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-macosx-x64.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-macosx-x64.tar.gz",
                 "18" : "tgz+https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-macosx-x64.tar.gz"
@@ -24,6 +25,7 @@
                 "18" : "tgz+https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jdk_x64_mac_hotspot_18.0.2.1_1.tar.gz"
             },
             "jdk@oracle" : {
+                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19_macos-x64_bin.tar.gz",
                 "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.4.1_macos-x64_bin.tar.gz",
                 "18" : "tgz+https://download.oracle.com/java/18/archive/jdk-18.0.2.1_macos-x64_bin.tar.gz"
             }
@@ -31,6 +33,7 @@
         "arm64" : {
             "jdk@corretto" : {
                 "8" : "tgz+https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-macosx-aarch64.tar.gz",
+                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-macosx-aarch64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-macosx-aarch64.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-macosx-aarch64.tar.gz",
                 "18" : "tgz+https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-macosx-aarch64.tar.gz"
@@ -50,6 +53,7 @@
                 "18" : "tgz+https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jdk_aarch64_mac_hotspot_18.0.2.1_1.tar.gz"
             },
             "jdk@oracle" : {
+                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19_macos-aarch64_bin.tar.gz",
                 "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.4.1_macos-aarch64_bin.tar.gz",
                 "18" : "tgz+https://download.oracle.com/java/18/archive/jdk-18.0.2.1_macos-aarch64_bin.tar.gz"
             }
@@ -59,6 +63,7 @@
         "amd64" : {
             "jdk@corretto" : {
                 "8" : "tgz+https://corretto.aws/downloads/resources/8.342.07.4/amazon-corretto-8.342.07.4-linux-x64.tar.gz",
+                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-linux-x64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-linux-x64.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-linux-x64.tar.gz",
                 "18" : "tgz+https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-linux-x64.tar.gz"
@@ -80,6 +85,7 @@
                 "18" : "tgz+https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jdk_x64_linux_hotspot_18.0.2.1_1.tar.gz"
             },
             "jdk@oracle" : {
+                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19_linux-x64_bin.tar.gz",
                 "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.4.1_linux-x64_bin.tar.gz",
                 "18" : "tgz+https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-x64_bin.tar.gz"
             }
@@ -87,6 +93,7 @@
         "aarch64" : {
             "jdk@corretto" : {
                 "8" : "tgz+https://corretto.aws/downloads/resources/8.342.07.4/amazon-corretto-8.342.07.4-linux-aarch64.tar.gz",
+                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-linux-aarch64.tar.gz",
                 "11" : "tgz+https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-linux-aarch64.tar.gz",
                 "17" : "tgz+https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-linux-aarch64.tar.gz",
                 "18" : "tgz+https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-linux-aarch64.tar.gz"
@@ -108,6 +115,7 @@
                 "18" : "tgz+https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jdk_aarch64_linux_hotspot_18.0.2.1_1.tar.gz"
             },
             "jdk@oracle" : {
+                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19_linux-aarch64_bin.tar.gz",
                 "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.4.1_linux-aarch64_bin.tar.gz",
                 "18" : "tgz+https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-aarch64_bin.tar.gz"
             }
@@ -117,6 +125,7 @@
         "amd64" : {
             "jdk@corretto" : {
                 "8" : "zip+https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-windows-x64-jdk.zip",
+                "19" : "zip+https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-windows-x64-jdk.zip",
                 "11" : "zip+https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-windows-x64-jdk.zip",
                 "17" : "zip+https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-windows-x64-jdk.zip",
                 "18" : "zip+https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-windows-x64-jdk.zip"
@@ -138,6 +147,7 @@
                 "18" : "zip+https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jdk_x64_windows_hotspot_18.0.2.1_1.zip"
             },
             "jdk@oracle" : {
+                "19" : "zip+https://download.oracle.com/java/19/archive/jdk-19_windows-x64_bin.zip",
                 "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.4.1_windows-x64_bin.zip",
                 "18" : "zip+https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.zip"
             }
