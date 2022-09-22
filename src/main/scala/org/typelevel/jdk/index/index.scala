@@ -39,12 +39,14 @@ val MainIndex: Index = Index(
     Release(Linux, Amd64, OpenJ9, JDK_8, TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_x64_linux_8u345b01_openj9-0.33.1.tar.gz")),
 
     // Corretto, Linux, x64
+    Release(Linux, Amd64, Corretto, JDK_19, TarGZ, url("https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-linux-x64.tar.gz")),
     Release(Linux, Amd64, Corretto, JDK_18, TarGZ, url("https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-linux-x64.tar.gz")),
     Release(Linux, Amd64, Corretto, JDK_17, TarGZ, url("https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-linux-x64.tar.gz")),
     Release(Linux, Amd64, Corretto, JDK_11, TarGZ, url("https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-linux-x64.tar.gz")),
     Release(Linux, Amd64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.342.07.4/amazon-corretto-8.342.07.4-linux-x64.tar.gz")),
 
     // Oracle, Linux, x64
+    Release(Linux, Amd64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_linux-x64_bin.tar.gz")),
     Release(Linux, Amd64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-x64_bin.tar.gz")),
     Release(Linux, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_linux-x64_bin.tar.gz")),
 
@@ -65,12 +67,14 @@ val MainIndex: Index = Index(
     Release(Linux, Aarch64, OpenJ9, JDK_8, TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_linux_8u345b01_openj9-0.33.1.tar.gz")),
 
     // Corretto, Linux, aarch64
+    Release(Linux, Aarch64, Corretto, JDK_19, TarGZ, url("https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-linux-aarch64.tar.gz")),
     Release(Linux, Aarch64, Corretto, JDK_18, TarGZ, url("https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-linux-aarch64.tar.gz")),
     Release(Linux, Aarch64, Corretto, JDK_17, TarGZ, url("https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-linux-aarch64.tar.gz")),
     Release(Linux, Aarch64, Corretto, JDK_11, TarGZ, url("https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-linux-aarch64.tar.gz")),
     Release(Linux, Aarch64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.342.07.4/amazon-corretto-8.342.07.4-linux-aarch64.tar.gz")),
 
     // Oracle, Linux, aarch64
+    Release(Linux, Aarch64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_linux-aarch64_bin.tar.gz")),
     Release(Linux, Aarch64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-aarch64_bin.tar.gz")),
     Release(Linux, Aarch64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_linux-aarch64_bin.tar.gz")),
 
@@ -91,12 +95,14 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, OpenJ9, JDK_8, TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_x64_mac_8u345b01_openj9-0.33.1.tar.gz")),
 
     // Corretto, MacOS, x64
+    Release(MacOS, Amd64, Corretto, JDK_19, TarGZ, url("https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-macosx-x64.tar.gz")),
     Release(MacOS, Amd64, Corretto, JDK_18, TarGZ, url("https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-macosx-x64.tar.gz")),
     Release(MacOS, Amd64, Corretto, JDK_17, TarGZ, url("https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-macosx-x64.tar.gz")),
     Release(MacOS, Amd64, Corretto, JDK_11, TarGZ, url("https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-macosx-x64.tar.gz")),
     Release(MacOS, Amd64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-macosx-x64.tar.gz")),
 
     // Oracle, MacOS, x64
+    Release(MacOS, Amd64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_macos-x64_bin.tar.gz")),
     Release(MacOS, Amd64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_macos-x64_bin.tar.gz")),
     Release(MacOS, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_macos-x64_bin.tar.gz")),
 
@@ -115,12 +121,14 @@ val MainIndex: Index = Index(
     Release(MacOS, Arm64, OpenJ9, JDK_11, TarGZ, url("https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.16.1%2B1_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_mac_11.0.16.1_1_openj9-0.33.1.tar.gz")),
 
     // Corretto, MacOS, aarch64
+    Release(MacOS, Arm64, Corretto, JDK_19, TarGZ, url("https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-macosx-aarch64.tar.gz")),
     Release(MacOS, Arm64, Corretto, JDK_18, TarGZ, url("https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-macosx-aarch64.tar.gz")),
     Release(MacOS, Arm64, Corretto, JDK_17, TarGZ, url("https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-macosx-aarch64.tar.gz")),
     Release(MacOS, Arm64, Corretto, JDK_11, TarGZ, url("https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-macosx-aarch64.tar.gz")),
     Release(MacOS, Arm64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-macosx-aarch64.tar.gz")),
 
     // Oracle, MacOS, aarch64
+    Release(MacOS, Arm64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_macos-aarch64_bin.tar.gz")),
     Release(MacOS, Arm64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_macos-aarch64_bin.tar.gz")),
     Release(MacOS, Arm64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_macos-aarch64_bin.tar.gz")),
 
@@ -141,12 +149,14 @@ val MainIndex: Index = Index(
     Release(Windows, Amd64, OpenJ9, JDK_8, Zip, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_x64_windows_8u345b01_openj9-0.33.1.zip")),
 
     // Corretto, Windows, x64
+    Release(Windows, Amd64, Corretto, JDK_19, Zip, url("https://corretto.aws/downloads/resources/19.0.0.36.1/amazon-corretto-19.0.0.36.1-windows-x64-jdk.zip")),
     Release(Windows, Amd64, Corretto, JDK_18, Zip, url("https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-windows-x64-jdk.zip")),
     Release(Windows, Amd64, Corretto, JDK_17, Zip, url("https://corretto.aws/downloads/resources/17.0.4.9.1/amazon-corretto-17.0.4.9.1-windows-x64-jdk.zip")),
     Release(Windows, Amd64, Corretto, JDK_11, Zip, url("https://corretto.aws/downloads/resources/11.0.16.9.1/amazon-corretto-11.0.16.9.1-windows-x64-jdk.zip")),
     Release(Windows, Amd64, Corretto, JDK_8, Zip, url("https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-windows-x64-jdk.zip")),
 
     // Oracle, Windows, x64
+    Release(Windows, Amd64, Oracle, JDK_19, Zip, url("https://download.oracle.com/java/19/archive/jdk-19_windows-x64_bin.zip")),
     Release(Windows, Amd64, Oracle, JDK_18, Zip, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.zip")),
     Release(Windows, Amd64, Oracle, JDK_17, Zip, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_windows-x64_bin.zip"))
   )
