@@ -28,12 +28,10 @@ jobs:
           - openj9@11
           - openj9@8
           - corretto@19
-          - corretto@18
           - corretto@17
           - corretto@11
           - corretto@8
           - oracle@19
-          - oracle@18
           - oracle@17
     runs-on: ${{ matrix.os }}
     steps:
@@ -84,10 +82,14 @@ jobs:
             version: 19
           - distribution: openj9
             version: 19
+          - distribution: corretto
+            version: 18
           - distribution: oracle
             version: 8
           - distribution: oracle
             version: 11
+          - distribution: oracle
+            version: 18
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout current branch
