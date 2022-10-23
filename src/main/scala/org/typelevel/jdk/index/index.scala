@@ -46,9 +46,8 @@ val MainIndex: Index = Index(
     Release(Linux, Amd64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.352.08.1/amazon-corretto-8.352.08.1-linux-x64.tar.gz")),
 
     // Oracle, Linux, x64
-    Release(Linux, Amd64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_linux-x64_bin.tar.gz")),
-    Release(Linux, Amd64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-x64_bin.tar.gz")),
-    Release(Linux, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_linux-x64_bin.tar.gz")),
+    Release(Linux, Amd64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19.0.1_linux-x64_bin.tar.gz")),
+    Release(Linux, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-x64_bin.tar.gz")),
 
     // Temurin, Linux, aarch64
     Release(Linux, Aarch64, Temurin, JDK_19, TarGZ, url("https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_aarch64_linux_hotspot_19_36.tar.gz")),
@@ -74,9 +73,8 @@ val MainIndex: Index = Index(
     Release(Linux, Aarch64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.352.08.1/amazon-corretto-8.352.08.1-linux-aarch64.tar.gz")),
 
     // Oracle, Linux, aarch64
-    Release(Linux, Aarch64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_linux-aarch64_bin.tar.gz")),
-    Release(Linux, Aarch64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-aarch64_bin.tar.gz")),
-    Release(Linux, Aarch64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_linux-aarch64_bin.tar.gz")),
+    Release(Linux, Aarch64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19.0.1_linux-aarch64_bin.tar.gz")),
+    Release(Linux, Aarch64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-aarch64_bin.tar.gz")),
 
     // Temurin, MacOS, x64
     Release(MacOS, Amd64, Temurin, JDK_19, TarGZ, url("https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_x64_mac_hotspot_19_36.tar.gz")),
@@ -102,9 +100,8 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.352.08.1/amazon-corretto-8.352.08.1-macosx-x64.tar.gz")),
 
     // Oracle, MacOS, x64
-    Release(MacOS, Amd64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_macos-x64_bin.tar.gz")),
-    Release(MacOS, Amd64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_macos-x64_bin.tar.gz")),
-    Release(MacOS, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_macos-x64_bin.tar.gz")),
+    Release(MacOS, Amd64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19.0.1_macos-x64_bin.tar.gz")),
+    Release(MacOS, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.5_macos-x64_bin.tar.gz")),
 
     // Temurin, MacOS, aarch64
     Release(MacOS, Arm64, Temurin, JDK_19, TarGZ, url("https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_aarch64_mac_hotspot_19_36.tar.gz")),
@@ -128,9 +125,8 @@ val MainIndex: Index = Index(
     Release(MacOS, Arm64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.352.08.1/amazon-corretto-8.352.08.1-macosx-aarch64.tar.gz")),
 
     // Oracle, MacOS, aarch64
-    Release(MacOS, Arm64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19_macos-aarch64_bin.tar.gz")),
-    Release(MacOS, Arm64, Oracle, JDK_18, TarGZ, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_macos-aarch64_bin.tar.gz")),
-    Release(MacOS, Arm64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_macos-aarch64_bin.tar.gz")),
+    Release(MacOS, Arm64, Oracle, JDK_19, TarGZ, url("https://download.oracle.com/java/19/archive/jdk-19.0.1_macos-aarch64_bin.tar.gz")),
+    Release(MacOS, Arm64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.5_macos-aarch64_bin.tar.gz")),
 
     // Temurin, Windows, x64
     Release(Windows, Amd64, Temurin, JDK_19, Zip, url("https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_x64_windows_hotspot_19_36.zip")),
@@ -156,9 +152,8 @@ val MainIndex: Index = Index(
     Release(Windows, Amd64, Corretto, JDK_8, Zip, url("https://corretto.aws/downloads/resources/8.352.08.1/amazon-corretto-8.352.08.1-windows-x64-jdk.zip")),
 
     // Oracle, Windows, x64
-    Release(Windows, Amd64, Oracle, JDK_19, Zip, url("https://download.oracle.com/java/19/archive/jdk-19_windows-x64_bin.zip")),
-    Release(Windows, Amd64, Oracle, JDK_18, Zip, url("https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.zip")),
-    Release(Windows, Amd64, Oracle, JDK_17, Zip, url("https://download.oracle.com/java/17/archive/jdk-17.0.4.1_windows-x64_bin.zip"))
+    Release(Windows, Amd64, Oracle, JDK_19, Zip, url("https://download.oracle.com/java/19/archive/jdk-19.0.1_windows-x64_bin.zip")),
+    Release(Windows, Amd64, Oracle, JDK_17, Zip, url("https://download.oracle.com/java/17/archive/jdk-17.0.5_windows-x64_bin.zip"))
   )
 )
 // format: on
