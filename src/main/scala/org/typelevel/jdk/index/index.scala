@@ -30,8 +30,9 @@ val MainIndex: Index = Index(
     Release(Linux, Amd64, Temurin, JDK_8, TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jdk_x64_linux_hotspot_8u345b01.tar.gz")),
 
     // Graal, Linux, x64
-    Release(Linux, Amd64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-linux-amd64-22.2.0.tar.gz")),
-    Release(Linux, Amd64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java11-linux-amd64-22.2.0.tar.gz")),
+    Release(Linux, Amd64, GraalVM, JDK_19, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java19-linux-amd64-22.3.0.tar.gz")),
+    Release(Linux, Amd64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java17-linux-amd64-22.3.0.tar.gz")),
+    Release(Linux, Amd64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java11-linux-amd64-22.3.0.tar.gz")),
 
     // Semeru, Linux, x64
     Release(Linux, Amd64, OpenJ9, JDK_18, TarGZ, url("https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.1/ibm-semeru-open-jdk_x64_linux_18.0.2_9_openj9-0.33.1.tar.gz")),
@@ -57,8 +58,9 @@ val MainIndex: Index = Index(
     Release(Linux, Aarch64, Temurin, JDK_8, TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jdk_aarch64_linux_hotspot_8u345b01.tar.gz")),
 
     // Graal, Linux, aarch64
-    Release(Linux, Aarch64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-linux-aarch64-22.2.0.tar.gz")),
-    Release(Linux, Aarch64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java11-linux-aarch64-22.2.0.tar.gz")),
+    Release(Linux, Aarch64, GraalVM, JDK_19, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java19-linux-aarch64-22.3.0.tar.gz")),
+    Release(Linux, Aarch64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java17-linux-aarch64-22.3.0.tar.gz")),
+    Release(Linux, Aarch64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java11-linux-aarch64-22.3.0.tar.gz")),
 
     // Semeru, Linux, aarch64
     Release(Linux, Aarch64, OpenJ9, JDK_18, TarGZ, url("https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_linux_18.0.2_9_openj9-0.33.1.tar.gz")),
@@ -84,8 +86,9 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, Temurin, JDK_8, TarGZ, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jdk_x64_mac_hotspot_8u345b01.tar.gz")),
 
     // Graal, MacOS, x64
-    Release(MacOS, Amd64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-darwin-amd64-22.2.0.tar.gz")),
-    Release(MacOS, Amd64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java11-darwin-amd64-22.2.0.tar.gz")),
+    Release(MacOS, Amd64, GraalVM, JDK_19, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java19-darwin-amd64-22.3.0.tar.gz")),
+    Release(MacOS, Amd64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java17-darwin-amd64-22.3.0.tar.gz")),
+    Release(MacOS, Amd64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java11-darwin-amd64-22.3.0.tar.gz")),
 
     // Semeru, MacOS, x64
     Release(MacOS, Amd64, OpenJ9, JDK_18, TarGZ, url("https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.1/ibm-semeru-open-jdk_x64_mac_18.0.2_9_openj9-0.33.1.tar.gz")),
@@ -110,8 +113,9 @@ val MainIndex: Index = Index(
     Release(MacOS, Arm64, Temurin, JDK_11, TarGZ, url("https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.16.1_1.tar.gz")),
 
     // Graal, MacOS, aarch64
-    Release(MacOS, Arm64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-darwin-aarch64-22.2.0.tar.gz")),
-    Release(MacOS, Arm64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java11-darwin-aarch64-22.2.0.tar.gz")),
+    Release(MacOS, Arm64, GraalVM, JDK_19, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java19-darwin-aarch64-22.3.0.tar.gz")),
+    Release(MacOS, Arm64, GraalVM, JDK_17, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java17-darwin-aarch64-22.3.0.tar.gz")),
+    Release(MacOS, Arm64, GraalVM, JDK_11, TarGZ, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java11-darwin-aarch64-22.3.0.tar.gz")),
 
     // Semeru, MacOS, aarch64
     Release(MacOS, Arm64, OpenJ9, JDK_18, TarGZ, url("https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.tar.gz")),
@@ -136,8 +140,9 @@ val MainIndex: Index = Index(
     Release(Windows, Amd64, Temurin, JDK_8, Zip, url("https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jdk_x64_windows_hotspot_8u345b01.zip")),
 
     // Graal, Windows, x64
-    Release(Windows, Amd64, GraalVM, JDK_17, Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-windows-amd64-22.2.0.zip")),
-    Release(Windows, Amd64, GraalVM, JDK_11, Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java11-windows-amd64-22.2.0.zip")),
+    Release(Windows, Amd64, GraalVM, JDK_19, Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java19-windows-amd64-22.3.0.zip")),
+    Release(Windows, Amd64, GraalVM, JDK_17, Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java17-windows-amd64-22.3.0.zip")),
+    Release(Windows, Amd64, GraalVM, JDK_11, Zip, url("https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.0/graalvm-ce-java11-windows-amd64-22.3.0.zip")),
 
     // Semeru, Windows, x64
     Release(Windows, Amd64, OpenJ9, JDK_18, Zip, url("https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.1/ibm-semeru-open-jdk_x64_windows_18.0.2_9_openj9-0.33.1.zip")),

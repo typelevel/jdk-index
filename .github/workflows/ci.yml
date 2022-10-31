@@ -21,6 +21,7 @@ jobs:
           - temurin@17
           - temurin@11
           - temurin@8
+          - graalvm@19
           - graalvm@17
           - graalvm@11
           - openj9@18
@@ -78,8 +79,6 @@ jobs:
             version: 8
           - distribution: graalvm
             version: 18
-          - distribution: graalvm
-            version: 19
           - distribution: openj9
             version: 19
           - distribution: corretto
