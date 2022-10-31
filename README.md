@@ -14,7 +14,6 @@ and users should be aware by now.
 ## Available JDK vendors
 - [Eclipse Temurin](https://adoptium.net)
   - JDK 19 &ndash; `temurin@19`
-  - JDK 18 &ndash; `temurin@18`
   - JDK 17 &ndash; `temurin@17`
   - JDK 11 &ndash; `temurin@11`
   - JDK  8 &ndash; `temurin@8`
