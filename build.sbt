@@ -31,7 +31,7 @@ ThisBuild / developers := List(
 
 ThisBuild / licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 
-ThisBuild / scalaVersion := "3.2.1"
+ThisBuild / scalaVersion := "3.2.2"
 
 val `jdk-index` = project
   .in(file("."))
