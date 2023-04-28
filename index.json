@@ -2,11 +2,10 @@
     "darwin" : {
         "amd64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/resources/8.362.08.1/amazon-corretto-8.362.08.1-macosx-x64.tar.gz",
-                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.2.7.1/amazon-corretto-19.0.2.7.1-macosx-x64.tar.gz",
-                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.18.10.1/amazon-corretto-11.0.18.10.1-macosx-x64.tar.gz",
-                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.6.10.1/amazon-corretto-17.0.6.10.1-macosx-x64.tar.gz",
-                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.0.36.1/amazon-corretto-20.0.0.36.1-macosx-x64.tar.gz"
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.372.07.1/amazon-corretto-8.372.07.1-macosx-x64.tar.gz",
+                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.19.7.1/amazon-corretto-11.0.19.7.1-macosx-x64.tar.gz",
+                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-macosx-x64.tar.gz",
+                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.1.9.1/amazon-corretto-20.0.1.9.1-macosx-x64.tar.gz"
             },
             "jdk@openj9" : {
                 "8" : "tgz+https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u362-b09_openj9-0.36.0/ibm-semeru-open-jdk_x64_mac_8u362b09_openj9-0.36.0.tar.gz",
@@ -14,30 +13,26 @@
                 "17" : "tgz+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.6%2B10_openj9-0.36.0/ibm-semeru-open-jdk_x64_mac_17.0.6_10_openj9-0.36.0.tar.gz"
             },
             "jdk@graalvm" : {
-                "19" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java19-darwin-amd64-22.3.1.tar.gz",
-                "11" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java11-darwin-amd64-22.3.1.tar.gz",
-                "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java17-darwin-amd64-22.3.1.tar.gz"
+                "11" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java11-darwin-amd64-22.3.2.tar.gz",
+                "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java17-darwin-amd64-22.3.2.tar.gz"
             },
             "jdk@temurin" : {
-                "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_x64_mac_hotspot_8u362b09.tar.gz",
-                "19" : "tgz+https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_x64_mac_hotspot_19.0.2_7.tar.gz",
-                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-jdk_x64_mac_hotspot_11.0.18_10.tar.gz",
-                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-jdk_x64_mac_hotspot_17.0.6_10.tar.gz",
-                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-jdk_x64_mac_hotspot_20_36.tar.gz"
+                "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jdk_x64_mac_hotspot_8u372b07.tar.gz",
+                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_mac_hotspot_11.0.19_7.tar.gz",
+                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_x64_mac_hotspot_17.0.7_7.tar.gz",
+                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jdk_x64_mac_hotspot_20.0.1_9.tar.gz"
             },
             "jdk@oracle" : {
-                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19.0.2_macos-x64_bin.tar.gz",
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.6_macos-x64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20_macos-x64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-x64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_macos-x64_bin.tar.gz"
             }
         },
         "arm64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/resources/8.362.08.1/amazon-corretto-8.362.08.1-macosx-aarch64.tar.gz",
-                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.2.7.1/amazon-corretto-19.0.2.7.1-macosx-aarch64.tar.gz",
-                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.18.10.1/amazon-corretto-11.0.18.10.1-macosx-aarch64.tar.gz",
-                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.6.10.1/amazon-corretto-17.0.6.10.1-macosx-aarch64.tar.gz",
-                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.0.36.1/amazon-corretto-20.0.0.36.1-macosx-aarch64.tar.gz"
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.372.07.1/amazon-corretto-8.372.07.1-macosx-aarch64.tar.gz",
+                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.19.7.1/amazon-corretto-11.0.19.7.1-macosx-aarch64.tar.gz",
+                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-macosx-aarch64.tar.gz",
+                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.1.9.1/amazon-corretto-20.0.1.9.1-macosx-aarch64.tar.gz"
             },
             "jdk@openj9" : {
                 "11" : "tgz+https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.18%2B10_openj9-0.36.1/ibm-semeru-open-jdk_aarch64_mac_11.0.18_10_openj9-0.36.1.tar.gz",
@@ -49,26 +44,23 @@
                 "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java17-darwin-aarch64-22.3.1.tar.gz"
             },
             "jdk@temurin" : {
-                "19" : "tgz+https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_aarch64_mac_hotspot_19.0.2_7.tar.gz",
-                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.18_10.tar.gz",
-                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.6_10.tar.gz",
-                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-jdk_aarch64_mac_hotspot_20_36.tar.gz"
+                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.19_7.tar.gz",
+                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.7_7.tar.gz",
+                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jdk_aarch64_mac_hotspot_20.0.1_9.tar.gz"
             },
             "jdk@oracle" : {
-                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19.0.2_macos-aarch64_bin.tar.gz",
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.6_macos-aarch64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20_macos-aarch64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-aarch64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_macos-aarch64_bin.tar.gz"
             }
         }
     },
     "linux" : {
         "amd64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/resources/8.362.08.1/amazon-corretto-8.362.08.1-linux-x64.tar.gz",
-                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.2.7.1/amazon-corretto-19.0.2.7.1-linux-x64.tar.gz",
-                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.18.10.1/amazon-corretto-11.0.18.10.1-linux-x64.tar.gz",
-                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.6.10.1/amazon-corretto-17.0.6.10.1-linux-x64.tar.gz",
-                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.0.36.1/amazon-corretto-20.0.0.36.1-linux-x64.tar.gz"
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.372.07.1/amazon-corretto-8.372.07.1-linux-x64.tar.gz",
+                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.19.7.1/amazon-corretto-11.0.19.7.1-linux-x64.tar.gz",
+                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-x64.tar.gz",
+                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.1.9.1/amazon-corretto-20.0.1.9.1-linux-x64.tar.gz"
             },
             "jdk@openj9" : {
                 "8" : "tgz+https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u362-b09_openj9-0.36.0/ibm-semeru-open-jdk_x64_linux_8u362b09_openj9-0.36.0.tar.gz",
@@ -76,30 +68,26 @@
                 "17" : "tgz+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.6%2B10_openj9-0.36.0/ibm-semeru-open-jdk_x64_linux_17.0.6_10_openj9-0.36.0.tar.gz"
             },
             "jdk@graalvm" : {
-                "19" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java19-linux-amd64-22.3.1.tar.gz",
-                "11" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java11-linux-amd64-22.3.1.tar.gz",
-                "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java17-linux-amd64-22.3.1.tar.gz"
+                "11" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java11-linux-amd64-22.3.2.tar.gz",
+                "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java17-linux-amd64-22.3.2.tar.gz"
             },
             "jdk@temurin" : {
-                "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u362b09.tar.gz",
-                "19" : "tgz+https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_x64_linux_hotspot_19.0.2_7.tar.gz",
-                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.18_10.tar.gz",
-                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.6_10.tar.gz",
-                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-jdk_x64_linux_hotspot_20_36.tar.gz"
+                "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jdk_x64_linux_hotspot_8u372b07.tar.gz",
+                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz",
+                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.7_7.tar.gz",
+                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jdk_x64_linux_hotspot_20.0.1_9.tar.gz"
             },
             "jdk@oracle" : {
-                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19.0.2_linux-x64_bin.tar.gz",
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.6_linux-x64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20_linux-x64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-x64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-x64_bin.tar.gz"
             }
         },
         "aarch64" : {
             "jdk@corretto" : {
-                "8" : "tgz+https://corretto.aws/downloads/resources/8.362.08.1/amazon-corretto-8.362.08.1-linux-aarch64.tar.gz",
-                "19" : "tgz+https://corretto.aws/downloads/resources/19.0.2.7.1/amazon-corretto-19.0.2.7.1-linux-aarch64.tar.gz",
-                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.18.10.1/amazon-corretto-11.0.18.10.1-linux-aarch64.tar.gz",
-                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.6.10.1/amazon-corretto-17.0.6.10.1-linux-aarch64.tar.gz",
-                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.0.36.1/amazon-corretto-20.0.0.36.1-linux-aarch64.tar.gz"
+                "8" : "tgz+https://corretto.aws/downloads/resources/8.372.07.1/amazon-corretto-8.372.07.1-linux-aarch64.tar.gz",
+                "11" : "tgz+https://corretto.aws/downloads/resources/11.0.19.7.1/amazon-corretto-11.0.19.7.1-linux-aarch64.tar.gz",
+                "17" : "tgz+https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-aarch64.tar.gz",
+                "20" : "tgz+https://corretto.aws/downloads/resources/20.0.1.9.1/amazon-corretto-20.0.1.9.1-linux-aarch64.tar.gz"
             },
             "jdk@openj9" : {
                 "8" : "tgz+https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u362-b09_openj9-0.36.0/ibm-semeru-open-jdk_aarch64_linux_8u362b09_openj9-0.36.0.tar.gz",
@@ -107,32 +95,28 @@
                 "17" : "tgz+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.6%2B10_openj9-0.36.0/ibm-semeru-open-jdk_aarch64_linux_17.0.6_10_openj9-0.36.0.tar.gz"
             },
             "jdk@graalvm" : {
-                "19" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java19-linux-aarch64-22.3.1.tar.gz",
-                "11" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java11-linux-aarch64-22.3.1.tar.gz",
-                "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java17-linux-aarch64-22.3.1.tar.gz"
+                "11" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java11-linux-aarch64-22.3.2.tar.gz",
+                "17" : "tgz+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java17-linux-aarch64-22.3.2.tar.gz"
             },
             "jdk@temurin" : {
-                "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u362b09.tar.gz",
-                "19" : "tgz+https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_aarch64_linux_hotspot_19.0.2_7.tar.gz",
-                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.18_10.tar.gz",
-                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.6_10.tar.gz",
-                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-jdk_aarch64_linux_hotspot_20_36.tar.gz"
+                "8" : "tgz+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jdk_aarch64_linux_hotspot_8u372b07.tar.gz",
+                "11" : "tgz+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz",
+                "17" : "tgz+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.7_7.tar.gz",
+                "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jdk_aarch64_linux_hotspot_20.0.1_9.tar.gz"
             },
             "jdk@oracle" : {
-                "19" : "tgz+https://download.oracle.com/java/19/archive/jdk-19.0.2_linux-aarch64_bin.tar.gz",
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.6_linux-aarch64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20_linux-aarch64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-aarch64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-aarch64_bin.tar.gz"
             }
         }
     },
     "windows" : {
         "amd64" : {
             "jdk@corretto" : {
-                "8" : "zip+https://corretto.aws/downloads/resources/8.362.08.1/amazon-corretto-8.362.08.1-windows-x64-jdk.zip",
-                "19" : "zip+https://corretto.aws/downloads/resources/19.0.2.7.1/amazon-corretto-19.0.2.7.1-windows-x64-jdk.zip",
-                "11" : "zip+https://corretto.aws/downloads/resources/11.0.18.10.1/amazon-corretto-11.0.18.10.1-windows-x64-jdk.zip",
-                "17" : "zip+https://corretto.aws/downloads/resources/17.0.6.10.1/amazon-corretto-17.0.6.10.1-windows-x64-jdk.zip",
-                "20" : "zip+https://corretto.aws/downloads/resources/20.0.0.36.1/amazon-corretto-20.0.0.36.1-windows-x64-jdk.zip"
+                "8" : "zip+https://corretto.aws/downloads/resources/8.372.07.1/amazon-corretto-8.372.07.1-windows-x64-jdk.zip",
+                "11" : "zip+https://corretto.aws/downloads/resources/11.0.19.7.1/amazon-corretto-11.0.19.7.1-windows-x64-jdk.zip",
+                "17" : "zip+https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-windows-x64-jdk.zip",
+                "20" : "zip+https://corretto.aws/downloads/resources/20.0.1.9.1/amazon-corretto-20.0.1.9.1-windows-x64-jdk.zip"
             },
             "jdk@openj9" : {
                 "8" : "zip+https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u362-b09_openj9-0.36.0/ibm-semeru-open-jdk_x64_windows_8u362b09_openj9-0.36.0.zip",
@@ -140,21 +124,18 @@
                 "17" : "zip+https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.6%2B10_openj9-0.36.0/ibm-semeru-open-jdk_x64_windows_17.0.6_10_openj9-0.36.0.zip"
             },
             "jdk@graalvm" : {
-                "19" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java19-windows-amd64-22.3.1.zip",
-                "11" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java11-windows-amd64-22.3.1.zip",
-                "17" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-java17-windows-amd64-22.3.1.zip"
+                "11" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java11-windows-amd64-22.3.2.zip",
+                "17" : "zip+https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java17-windows-amd64-22.3.2.zip"
             },
             "jdk@temurin" : {
-                "8" : "zip+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_x64_windows_hotspot_8u362b09.zip",
-                "19" : "zip+https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_x64_windows_hotspot_19.0.2_7.zip",
-                "11" : "zip+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-jdk_x64_windows_hotspot_11.0.18_10.zip",
-                "17" : "zip+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-jdk_x64_windows_hotspot_17.0.6_10.zip",
-                "20" : "zip+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-jdk_x64_windows_hotspot_20_36.zip"
+                "8" : "zip+https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jdk_x64_windows_hotspot_8u372b07.zip",
+                "11" : "zip+https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.19_7.zip",
+                "17" : "zip+https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_x64_windows_hotspot_17.0.7_7.zip",
+                "20" : "zip+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jdk_x64_windows_hotspot_20.0.1_9.zip"
             },
             "jdk@oracle" : {
-                "19" : "zip+https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.zip",
-                "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.6_windows-x64_bin.zip",
-                "20" : "zip+https://download.oracle.com/java/20/archive/jdk-20_windows-x64_bin.zip"
+                "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.7_windows-x64_bin.zip",
+                "20" : "zip+https://download.oracle.com/java/20/archive/jdk-20.0.1_windows-x64_bin.zip"
             }
         }
     }
