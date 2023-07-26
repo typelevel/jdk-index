@@ -38,7 +38,7 @@ val `jdk-index` = project
   .enablePlugins(AutomateHeaderPlugin)
   .settings(
     headerLicense := Some(
-      HeaderLicense.ALv2("2021-2022", (ThisBuild / organizationName).value)),
+      HeaderLicense.ALv2("2021-2023", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io" % "3.7.0",
       "io.circe" %% "circe-core" % "0.14.5"
