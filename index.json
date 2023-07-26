@@ -23,8 +23,8 @@
                 "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_mac_hotspot_20.0.2_9.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-x64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_macos-x64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.8_macos-x64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.2_macos-x64_bin.tar.gz"
             }
         },
         "arm64" : {
@@ -48,8 +48,8 @@
                 "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_mac_hotspot_20.0.2_9.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-aarch64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_macos-aarch64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.8_macos-aarch64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.2_macos-aarch64_bin.tar.gz"
             }
         }
     },
@@ -77,8 +77,8 @@
                 "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-x64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-x64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-x64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.2_linux-x64_bin.tar.gz"
             }
         },
         "aarch64" : {
@@ -104,8 +104,8 @@
                 "20" : "tgz+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_linux_hotspot_20.0.2_9.tar.gz"
             },
             "jdk@oracle" : {
-                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-aarch64_bin.tar.gz",
-                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-aarch64_bin.tar.gz"
+                "17" : "tgz+https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-aarch64_bin.tar.gz",
+                "20" : "tgz+https://download.oracle.com/java/20/archive/jdk-20.0.2_linux-aarch64_bin.tar.gz"
             }
         }
     },
@@ -133,8 +133,8 @@
                 "20" : "zip+https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip"
             },
             "jdk@oracle" : {
-                "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.7_windows-x64_bin.zip",
-                "20" : "zip+https://download.oracle.com/java/20/archive/jdk-20.0.1_windows-x64_bin.zip"
+                "17" : "zip+https://download.oracle.com/java/17/archive/jdk-17.0.8_windows-x64_bin.zip",
+                "20" : "zip+https://download.oracle.com/java/20/archive/jdk-20.0.2_windows-x64_bin.zip"
             }
         }
     }

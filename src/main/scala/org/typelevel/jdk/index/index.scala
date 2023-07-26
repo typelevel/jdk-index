@@ -44,8 +44,8 @@ val MainIndex: Index = Index(
     Release(Linux, Amd64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.382.05.1/amazon-corretto-8.382.05.1-linux-x64.tar.gz")),
 
     // Oracle, Linux, x64
-    Release(Linux, Amd64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-x64_bin.tar.gz")),
-    Release(Linux, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-x64_bin.tar.gz")),
+    Release(Linux, Amd64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.2_linux-x64_bin.tar.gz")),
+    Release(Linux, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-x64_bin.tar.gz")),
 
     // Temurin, Linux, aarch64
     Release(Linux, Aarch64, Temurin, JDK_20, TarGZ, url("https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_linux_hotspot_20.0.2_9.tar.gz")),
@@ -69,8 +69,8 @@ val MainIndex: Index = Index(
     Release(Linux, Aarch64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.382.05.1/amazon-corretto-8.382.05.1-linux-aarch64.tar.gz")),
 
     // Oracle, Linux, aarch64
-    Release(Linux, Aarch64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-aarch64_bin.tar.gz")),
-    Release(Linux, Aarch64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-aarch64_bin.tar.gz")),
+    Release(Linux, Aarch64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.2_linux-aarch64_bin.tar.gz")),
+    Release(Linux, Aarch64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-aarch64_bin.tar.gz")),
 
     // Temurin, MacOS, x64
     Release(MacOS, Amd64, Temurin, JDK_20, TarGZ, url("https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_mac_hotspot_20.0.2_9.tar.gz")),
@@ -94,8 +94,8 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.382.05.1/amazon-corretto-8.382.05.1-macosx-x64.tar.gz")),
 
     // Oracle, MacOS, x64
-    Release(MacOS, Amd64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.1_macos-x64_bin.tar.gz")),
-    Release(MacOS, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-x64_bin.tar.gz")),
+    Release(MacOS, Amd64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.2_macos-x64_bin.tar.gz")),
+    Release(MacOS, Amd64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.8_macos-x64_bin.tar.gz")),
 
     // Temurin, MacOS, aarch64
     Release(MacOS, Arm64, Temurin, JDK_20, TarGZ, url("https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_mac_hotspot_20.0.2_9.tar.gz")),
@@ -117,8 +117,8 @@ val MainIndex: Index = Index(
     Release(MacOS, Arm64, Corretto, JDK_8, TarGZ, url("https://corretto.aws/downloads/resources/8.382.05.1/amazon-corretto-8.382.05.1-macosx-aarch64.tar.gz")),
 
     // Oracle, MacOS, aarch64
-    Release(MacOS, Arm64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.1_macos-aarch64_bin.tar.gz")),
-    Release(MacOS, Arm64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-aarch64_bin.tar.gz")),
+    Release(MacOS, Arm64, Oracle, JDK_20, TarGZ, url("https://download.oracle.com/java/20/archive/jdk-20.0.2_macos-aarch64_bin.tar.gz")),
+    Release(MacOS, Arm64, Oracle, JDK_17, TarGZ, url("https://download.oracle.com/java/17/archive/jdk-17.0.8_macos-aarch64_bin.tar.gz")),
 
     // Temurin, Windows, x64
     Release(Windows, Amd64, Temurin, JDK_20, Zip, url("https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip")),
@@ -142,8 +142,8 @@ val MainIndex: Index = Index(
     Release(Windows, Amd64, Corretto, JDK_8, Zip, url("https://corretto.aws/downloads/resources/8.382.05.1/amazon-corretto-8.382.05.1-windows-x64-jdk.zip")),
 
     // Oracle, Windows, x64
-    Release(Windows, Amd64, Oracle, JDK_20, Zip, url("https://download.oracle.com/java/20/archive/jdk-20.0.1_windows-x64_bin.zip")),
-    Release(Windows, Amd64, Oracle, JDK_17, Zip, url("https://download.oracle.com/java/17/archive/jdk-17.0.7_windows-x64_bin.zip"))
+    Release(Windows, Amd64, Oracle, JDK_20, Zip, url("https://download.oracle.com/java/20/archive/jdk-20.0.2_windows-x64_bin.zip")),
+    Release(Windows, Amd64, Oracle, JDK_17, Zip, url("https://download.oracle.com/java/17/archive/jdk-17.0.8_windows-x64_bin.zip"))
   )
 )
 // format: on
