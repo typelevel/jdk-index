@@ -31,16 +31,16 @@ ThisBuild / developers := List(
 
 ThisBuild / licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 
-ThisBuild / scalaVersion := "3.2.2"
+ThisBuild / scalaVersion := "3.3.0"
 
 val `jdk-index` = project
   .in(file("."))
   .enablePlugins(AutomateHeaderPlugin)
   .settings(
     headerLicense := Some(
-      HeaderLicense.ALv2("2021-2022", (ThisBuild / organizationName).value)),
+      HeaderLicense.ALv2("2021-2023", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
-      "co.fs2" %% "fs2-io" % "3.6.1",
+      "co.fs2" %% "fs2-io" % "3.7.0",
       "io.circe" %% "circe-core" % "0.14.5"
     ),
     scalacOptions ++= {

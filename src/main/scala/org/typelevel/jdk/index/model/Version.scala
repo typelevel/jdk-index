@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2022 Typelevel
+ * Copyright 2021-2023 Typelevel
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@ package org.typelevel.jdk.index.model
 
 enum Version(string: String):
   case JDK_20 extends Version("20")
-  case JDK_19 extends Version("19")
   case JDK_17 extends Version("17")
   case JDK_11 extends Version("11")
   case JDK_8 extends Version("8")
