@@ -18,8 +18,8 @@ and users should be aware by now.
   - JDK 11 &ndash; `temurin@11`
   - JDK  8 &ndash; `temurin@8`
 - [GraalVM Community Edition](https://graalvm.org)
+  - JDK 20 &ndash; `graalvm@20`
   - JDK 17 &ndash; `graalvm@17`
-  - JDK 11 &ndash; `graalvm@11`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
   - JDK 17 &ndash; `openj9@17`
   - JDK 11 &ndash; `openj9@11`
