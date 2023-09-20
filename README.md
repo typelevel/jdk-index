@@ -17,19 +17,22 @@ and users should be aware by now.
   - JDK 17 &ndash; `temurin@17`
   - JDK 11 &ndash; `temurin@11`
   - JDK  8 &ndash; `temurin@8`
-- [GraalVM Community Edition](https://graalvm.org)
-  - JDK 20 &ndash; `graalvm@20`
+- [GraalVM](https://graalvm.org)
+  - JDK 21 &ndash; `graalvm@21`
   - JDK 17 &ndash; `graalvm@17`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
+  - JDK 20 &ndash; `openj9@20`
   - JDK 17 &ndash; `openj9@17`
   - JDK 11 &ndash; `openj9@11`
   - JDK  8 &ndash; `openj9@8`
 - [Amazon Corretto](https://docs.aws.amazon.com/corretto/index.html)
+  - JDK 21 &ndash; `corretto@21`
   - JDK 20 &ndash; `corretto@20`
   - JDK 17 &ndash; `corretto@17`
   - JDK 11 &ndash; `corretto@11`
   - JDK 8 &ndash; `corretto@8`
 - [Oracle](https://www.oracle.com/java/)
+  - JDK 21 &ndash; `oracle@21`
   - JDK 20 &ndash; `oracle@20`
   - JDK 17 &ndash; `oracle@17`
 
