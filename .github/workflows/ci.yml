@@ -83,6 +83,8 @@ jobs:
             version: 11
           - distribution: graalvm
             version: 8
+          - distribution: openj9
+            version: 21
           - distribution: oracle
             version: 11
           - distribution: oracle
