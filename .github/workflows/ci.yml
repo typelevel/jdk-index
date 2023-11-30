@@ -103,7 +103,7 @@ jobs:
           index: ${{ github.server_url }}/${{ github.repository }}/raw/${{ github.sha }}/index
 
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'jdkfile'
           java-version: ${{ matrix.version }}
