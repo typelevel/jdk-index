@@ -95,7 +95,7 @@ val MainIndex: Index = Index(
     Release(MacOS, Amd64, OpenJ9, JDK_20, TarGZ, url("https://github.com/ibmruntimes/semeru20-binaries/releases/download/jdk-20.0.2%2B9_openj9-0.40.0/ibm-semeru-open-jdk_x64_mac_20.0.2_9_openj9-0.40.0.tar.gz")),
     Release(MacOS, Amd64, OpenJ9, JDK_17, TarGZ, url("https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.8.1%2B1_openj9-0.40.0/ibm-semeru-open-jdk_x64_mac_17.0.8.1_1_openj9-0.40.0.tar.gz")),
     Release(MacOS, Amd64, OpenJ9, JDK_11, TarGZ, url("https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.20.1%2B1_openj9-0.40.0/ibm-semeru-open-jdk_x64_mac_11.0.20.1_1_openj9-0.40.0.tar.gz")),
-    Release(MacOS, Amd64, OpenJ9, JDK_8, TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u382-b05_openj9-0.40.0/ibm-semeru-open-jdk_x64_mac_8u382b05_openj9-0.40.0.tar.gz")),
+    Release(MacOS, Amd64, OpenJ9, JDK_8, TarGZ, url("https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u412-b08_openj9-0.44.0/ibm-semeru-open-jdk_x64_mac_8u412b08_openj9-0.44.0.tar.gz")),
 
     // Corretto, MacOS, x64
     Release(MacOS, Amd64, Corretto, JDK_21, TarGZ, url("https://corretto.aws/downloads/resources/21.0.0.35.1/amazon-corretto-21.0.0.35.1-macosx-x64.tar.gz")),
