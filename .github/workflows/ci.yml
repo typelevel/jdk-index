@@ -90,6 +90,8 @@ jobs:
             version: 11
           - distribution: oracle
             version: 8
+          - distribution: temurin
+            version: 8
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout current branch
