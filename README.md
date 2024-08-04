@@ -13,6 +13,7 @@ and users should be aware by now.
 
 ## Available JDK vendors
 - [Eclipse Temurin](https://adoptium.net)
+  - JDK 21 &ndash; `temurin@21`
   - JDK 20 &ndash; `temurin@20`
   - JDK 17 &ndash; `temurin@17`
   - JDK 11 &ndash; `temurin@11`
