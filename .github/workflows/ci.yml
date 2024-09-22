@@ -83,9 +83,15 @@ jobs:
         distribution: [ temurin, graalvm, openj9, corretto, oracle ]
         version: [ 8, 11, 17, 21, 22, 23 ]
         exclude:
+          - os: macos-latest
+            distribution: temurin
+            version: 8
           - distribution: graalvm
             version: 11
           - distribution: graalvm
+            version: 8
+          - os: macos-latest
+            distribution: openj9
             version: 8
           - distribution: oracle
             version: 11
