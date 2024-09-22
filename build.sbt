@@ -41,7 +41,7 @@ val `jdk-index` = project
       HeaderLicense.ALv2("2021-2023", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io" % "3.9.4",
-      "io.circe" %% "circe-core" % "0.14.6"
+      "io.circe" %% "circe-core" % "0.14.10"
     ),
     scalacOptions ++= {
       val version = System.getProperty("java.version")
