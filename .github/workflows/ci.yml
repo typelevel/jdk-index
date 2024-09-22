@@ -35,7 +35,6 @@ jobs:
           - corretto@23
           - corretto@22
           - corretto@21
-          - corretto@20
           - corretto@17
           - corretto@11
           - corretto@8
