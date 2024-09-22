@@ -18,7 +18,6 @@ package org.typelevel.jdk.index.model
 
 enum Version(string: String):
   case JDK_21 extends Version("21")
-  case JDK_20 extends Version("20")
   case JDK_17 extends Version("17")
   case JDK_11 extends Version("11")
   case JDK_8 extends Version("8")
