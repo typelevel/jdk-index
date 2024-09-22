@@ -23,32 +23,18 @@ import io.circe.syntax._
 private type NestedIndex = Map[OS, Map[Arch, Map[Vendor, Map[Version, Release]]]]
 
 private def nestedIndex(index: Index): NestedIndex =
-  index.releases.groupBy(_.os).map { (os, relByOs) =>
-    os ->
-      relByOs.groupBy(_.arch).map { (arch, relByOsArch) =>
-        arch ->
-          relByOsArch.groupBy(_.vendor).map { (vendor, relByOsArchVendor) =>
-            vendor ->
-              relByOsArchVendor.groupBy(_.version).map { (version, relByOsArchVendorVersion) =>
-                version -> relByOsArchVendorVersion.head
-              }
-          }
-      }
-  }
+  index.releases.groupBy(_.os).map: (os, relByOs) =>
+    os -> relByOs.groupBy(_.arch).map: (arch, relByOsArch) =>
+      arch -> relByOsArch.groupBy(_.vendor).map: (vendor, relByOsArchVendor) =>
+        vendor -> relByOsArchVendor.groupBy(_.version).map: (version, relByOsArchVendorVersion) =>
+          version -> relByOsArchVendorVersion.head
 
 private def nestedIndexToStringifiedMap(nested: NestedIndex) =
-  nested.map { (os, relByOs) =>
-    os.toString ->
-      relByOs.map { (arch, relByOsArch) =>
-        arch.toString ->
-          relByOsArch.map { (vendor, relByOsArchVendor) =>
-            s"jdk@$vendor" ->
-              relByOsArchVendor.map { (version, release) =>
-                version.toString -> s"${release.packageType}+${release.url}"
-              }
-          }
-      }
-  }
+  nested.map: (os, relByOs) =>
+    os.toString -> relByOs.map: (arch, relByOsArch) =>
+      arch.toString -> relByOsArch.map: (vendor, relByOsArchVendor) =>
+        s"jdk@$vendor" -> relByOsArchVendor.map: (version, release) =>
+          version.toString -> s"${release.packageType}+${release.url}"
 
 given Encoder[Index] with
   def apply(index: Index): Json =

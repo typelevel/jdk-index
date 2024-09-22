@@ -31,7 +31,7 @@ ThisBuild / developers := List(
 
 ThisBuild / licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 
-ThisBuild / scalaVersion := "3.3.3"
+ThisBuild / scalaVersion := "3.5.1"
 
 val `jdk-index` = project
   .in(file("."))
@@ -40,8 +40,8 @@ val `jdk-index` = project
     headerLicense := Some(
       HeaderLicense.ALv2("2021-2023", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
-      "co.fs2" %% "fs2-io" % "3.9.4",
-      "io.circe" %% "circe-core" % "0.14.6"
+      "co.fs2" %% "fs2-io" % "3.11.0",
+      "io.circe" %% "circe-core" % "0.14.10"
     ),
     scalacOptions ++= {
       val version = System.getProperty("java.version")

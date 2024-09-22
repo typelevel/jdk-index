@@ -33,16 +33,15 @@ object Generate extends IOApp.Simple:
       .drain
 
   val writeFileIndex: IO[Unit] =
-    Stream(MainIndex.releases: _*)
+    Stream(MainIndex.releases*)
       .covary[IO]
       .map(releaseToPath)
       .evalMap((path, url) => IO((path, url.toString)))
       .evalTap((path, _) => Files[IO].createDirectories(Path.fromNioPath(path)))
-      .flatMap { (path, contents) =>
+      .flatMap: (path, contents) =>
         Stream(contents)
           .through(text.utf8.encode)
           .through(Files[IO].writeAll(Path.fromNioPath(path.resolve("jdk"))))
-      }
       .compile
       .drain
 
