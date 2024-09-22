@@ -33,7 +33,7 @@ object Generate extends IOApp.Simple:
       .drain
 
   val writeFileIndex: IO[Unit] =
-    Stream(MainIndex.releases: _*)
+    Stream(MainIndex.releases*)
       .covary[IO]
       .map(releaseToPath)
       .evalMap((path, url) => IO((path, url.toString)))
