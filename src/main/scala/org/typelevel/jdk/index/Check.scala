@@ -40,14 +40,12 @@ object Check extends IOApp:
       .through(text.utf8.decode)
       .compile
       .last
-      .flatMap {
+      .flatMap:
         case Some(actual) =>
-          IO {
+          IO:
             val expected = MainIndex.asJson.spaces4.concat("\n")
             actual === expected
-          }
         case None => IO.pure(false)
-      }
       .ifM(
         IO.pure(ExitCode.Success),
         Console[IO]
@@ -59,22 +57,19 @@ object Check extends IOApp:
   val checkFilesIndex: IO[ExitCode] =
     Stream(MainIndex.releases*)
       .map(releaseToPath)
-      .evalMap { (path, url) => IO((path.resolve("jdk"), url.toString)) }
-      .evalMap { (path, contents) =>
+      .evalMap((path, url) => IO((path.resolve("jdk"), url.toString)))
+      .evalMap: (path, contents) =>
         Files[IO]
           .readAll(Path.fromNioPath(path))
           .through(text.utf8.decode)
           .compile
           .last
-          .map {
+          .map:
             case Some(actual) => actual === contents
             case None => false
-          }
-          .map {
+          .map:
             case true => ExitCode.Success
             case false => ExitCode.Error
-          }
-      }
       .compile
       .foldMonoid
 
