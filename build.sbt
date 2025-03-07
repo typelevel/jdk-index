@@ -31,14 +31,14 @@ ThisBuild / developers := List(
 
 ThisBuild / licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 
-ThisBuild / scalaVersion := "3.5.1"
+ThisBuild / scalaVersion := "3.6.4"
 
 val `jdk-index` = project
   .in(file("."))
   .enablePlugins(AutomateHeaderPlugin)
   .settings(
     headerLicense := Some(
-      HeaderLicense.ALv2("2021-2023", (ThisBuild / organizationName).value)),
+      HeaderLicense.ALv2("2021-2025", (ThisBuild / organizationName).value)),
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io" % "3.11.0",
       "io.circe" %% "circe-core" % "0.14.10"
@@ -49,7 +49,8 @@ val `jdk-index` = project
         Seq()
       else
         Seq("-release", "8")
-    }
+    },
+    Compile / run / fork := true
   )
 
 addCommandAlias("generateIndex", "runMain org.typelevel.jdk.index.Generate")
