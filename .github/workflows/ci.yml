@@ -35,6 +35,11 @@ jobs:
           - corretto@8
           - oracle@23
           - oracle@21
+        exclude:
+          - os: macos-latest
+            java: temurin@8
+          - os: macos-latest
+            java: openj9@8
     runs-on: ${{ matrix.os }}
     steps:
       - name: Ignore line ending differences in git
