@@ -13,27 +13,32 @@ and users should be aware by now.
 
 ## Available JDK vendors
 - [Eclipse Temurin](https://adoptium.net)
+  - JDK 25 &ndash; `temurin@25`
   - JDK 23 &ndash; `temurin@23`
   - JDK 21 &ndash; `temurin@21`
   - JDK 17 &ndash; `temurin@17`
   - JDK 11 &ndash; `temurin@11`
   - JDK  8 &ndash; `temurin@8`
 - [GraalVM](https://graalvm.org)
+  - JDK 25 &ndash; `graalvm@25`
   - JDK 23 &ndash; `graalvm@23`
   - JDK 21 &ndash; `graalvm@21`
 - [Eclipse OpenJ9](https://www.eclipse.org/openj9)
+  - JDK 25 &ndash; `openj9@25`
   - JDK 23 &ndash; `openj9@23`
   - JDK 21 &ndash; `openj9@21`
   - JDK 17 &ndash; `openj9@17`
   - JDK 11 &ndash; `openj9@11`
   - JDK  8 &ndash; `openj9@8`
 - [Amazon Corretto](https://docs.aws.amazon.com/corretto/index.html)
+  - JDK 25 &ndash; `corretto@25`
   - JDK 23 &ndash; `corretto@23`
   - JDK 21 &ndash; `corretto@21`
   - JDK 17 &ndash; `corretto@17`
   - JDK 11 &ndash; `corretto@11`
   - JDK 8 &ndash; `corretto@8`
 - [Oracle](https://www.oracle.com/java/)
+  - JDK 25 &ndash; `oracle@25`
   - JDK 23 &ndash; `oracle@23`
   - JDK 21 &ndash; `oracle@21`
 
